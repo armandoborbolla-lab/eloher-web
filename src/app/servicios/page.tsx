@@ -4,156 +4,128 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Servicios",
   description:
-    "Descubre todos los tratamientos de Spa Eloher: masajes, faciales, rituales corporales, manos y pies, depilación y más.",
+    "Menú de tratamientos EloHer: faciales, masajes, tratamientos corporales y más. Precios y duración de cada servicio.",
 };
 
+/* ── Datos reales del menú EloHer ── */
 const categories = [
   {
-    id: "masajes",
-    label: "Masajes",
-    title: "Masajes Terapéuticos",
+    id: "faciales",
+    label: "Faciales",
+    title: "Faciales",
     intro:
-      "Nuestros masajes combinan técnicas ancestrales y modernas para aliviar tensiones, mejorar la circulación y promover un descanso profundo.",
+      "Tratamientos especializados para cada tipo de piel. Desde limpieza profunda hasta técnicas de última generación para una piel luminosa, firme e hidratada.",
     services: [
       {
-        name: "Masaje Sueco Relajante",
-        desc: "Técnica clásica con movimientos suaves y fluidos que relajan los músculos y calman la mente.",
-        duration: "60 / 90 min",
+        name: "Détox Facial",
+        desc: "Elimina impurezas, piel más clara y saludable.",
+        duration: "50 min",
+        price: "$420",
+        tag: null,
       },
       {
-        name: "Masaje de Tejido Profundo",
-        desc: "Trabaja las capas musculares más profundas para liberar tensiones crónicas y nudos musculares.",
-        duration: "60 / 90 min",
+        name: "Hidratación Profunda",
+        desc: "Reduce la apariencia de líneas finas, aumenta la hidratación y suavidad del rostro.",
+        duration: "70 min",
+        price: "$490",
+        tag: null,
       },
       {
-        name: "Masaje con Piedras Calientes",
-        desc: "Piedras volcánicas calientes que dilatan músculos y mejoran la circulación mientras te envuelven en calor.",
-        duration: "90 min",
+        name: "Vitamínico",
+        desc: "Revitaliza tu piel proporcionando una dosis concentrada de nutrientes, brindando un extra de hidratación y luminosidad.",
+        duration: "30 min",
+        price: "$350",
+        tag: null,
       },
       {
-        name: "Masaje Aromaterapia",
-        desc: "Aceites esenciales puros seleccionados según tu estado de ánimo para una experiencia multisensorial.",
-        duration: "60 / 90 min",
+        name: "Beauty Lift",
+        desc: "Combina el exclusivo masaje japonés Kobido con radiofrecuencia para mejorar la firmeza, estimular la producción de colágeno y redefinir el contorno facial.",
+        duration: "80 min",
+        price: "$650",
+        tag: "Premium",
       },
     ],
   },
   {
-    id: "faciales",
-    label: "Faciales",
-    title: "Faciales de Lujo",
+    id: "masajes",
+    label: "Masajes",
+    title: "Masajes",
     intro:
-      "Protocolos personalizados con activos de alta eficacia para devolver la luminosidad, hidratación y juventud a tu piel.",
+      "Cada masaje está cuidadosamente diseñado para liberar tensiones, mejorar la circulación y llevarte a un estado de relajación profunda.",
     services: [
       {
-        name: "Facial Hidratante Profundo",
-        desc: "Ácido hialurónico y extractos botánicos para nutrir la piel deshidratada en profundidad.",
-        duration: "60 min",
+        name: "Masaje Aromaterapéutico",
+        desc: "Combina técnicas de masaje con los beneficios de la aromaterapia, creando una sinfonía de relajación y equilibrio.",
+        duration: "50 min",
+        price: "$450",
+        tag: "Presión media",
       },
       {
-        name: "Facial Anti-Edad",
-        desc: "Péptidos bioactivos y retinol que estimulan el colágeno para reducir líneas de expresión.",
-        duration: "75 min",
+        name: "Masaje Aroma Profundo",
+        desc: "Diseñado para liberar tensiones acumuladas con técnica de presión profunda.",
+        duration: "50 min",
+        price: "$500",
+        tag: "Presión profunda",
       },
       {
-        name: "Facial Purificante",
-        desc: "Limpieza profunda con exfoliación enzimática y arcillas para pieles mixtas o con impurezas.",
+        name: "Drenaje Linfático",
+        desc: "Promueve una sensación de ligereza en todo el cuerpo, favoreciendo la eliminación de toxinas.",
         duration: "60 min",
+        price: "$480",
+        tag: "Presión suave",
       },
       {
-        name: "Facial Luminosidad",
-        desc: "Vitamina C y ácidos AHA para unificar el tono y aportar un brillo natural y saludable.",
-        duration: "60 min",
+        name: "Masaje de Espalda",
+        desc: "Sesión enfocada en la zona de espalda para aliviar contracturas y tensión acumulada.",
+        duration: "25 min",
+        price: "$200",
+        tag: null,
       },
     ],
   },
   {
     id: "corporales",
-    label: "Corporales",
-    title: "Rituales Corporales",
+    label: "Tratamientos Corporales",
+    title: "Tratamientos Corporales",
     intro:
-      "Tratamientos de cuerpo completo que combinan exfoliación, nutrición y envolturas para una piel suave, luminosa y renovada.",
+      "Protocolos de aparatología y modelación corporal diseñados para resultados visibles y duraderos. Reafirma, reduce y redefine tu figura.",
     services: [
       {
-        name: "Exfoliación Corporal",
-        desc: "Sales del Himalaya y aceites esenciales que eliminan células muertas y revelan una piel radiante.",
-        duration: "45 min",
+        name: "Contorno Facial Perfecto",
+        desc: "Enfocado en mejorar la silueta de tu rostro, logrando un contorno facial armonioso que resalta tu belleza única.",
+        duration: "5 sesiones",
+        price: "$1,250",
+        tag: "Paquete",
       },
       {
-        name: "Envoltura Purificante de Arcilla",
-        desc: "Arcilla volcánica que desintoxica la piel y activa el metabolismo celular para un cuerpo renovado.",
-        duration: "60 min",
+        name: "Reductivo Abdomen y Laterales",
+        desc: "Reduce medidas, reafirma y tonifica tu silueta con tecnología de aparatología avanzada.",
+        duration: "6 sesiones",
+        price: "$2,100",
+        tag: "Paquete",
       },
       {
-        name: "Ritual de Chocolate",
-        desc: "Antioxidantes del cacao que nutren e iluminan mientras enuelven tu piel en un aroma irresistible.",
-        duration: "90 min",
-      },
-      {
-        name: "Hidratación Profunda Corporal",
-        desc: "Manteca de karité y aloe vera aplicados con técnicas de masaje para nutrir la piel intensa y duraderamente.",
-        duration: "60 min",
-      },
-    ],
-  },
-  {
-    id: "manos-pies",
-    label: "Manos y Pies",
-    title: "Manos y Pies",
-    intro:
-      "Tratamientos completos para el cuidado de manos y pies que combinan estética, hidratación y relajación.",
-    services: [
-      {
-        name: "Manicure Spa",
-        desc: "Limado, cutículas, exfoliación, masaje y esmaltado para unas manos perfectas.",
-        duration: "45 min",
-      },
-      {
-        name: "Pedicure Spa",
-        desc: "Baño de pies, exfoliación, hidratación, masaje relajante y esmaltado.",
-        duration: "60 min",
-      },
-      {
-        name: "Ritual de Manos",
-        desc: "Exfoliación, envoltura nutritiva y masaje profundo para manos suaves y rejuvenecidas.",
-        duration: "45 min",
-      },
-      {
-        name: "Manicure + Pedicure Eloher",
-        desc: "El duo completo de nuestro servicio signature para manos y pies impecables.",
-        duration: "90 min",
-      },
-    ],
-  },
-  {
-    id: "depilacion",
-    label: "Depilación",
-    title: "Depilación",
-    intro:
-      "Servicios de depilación precisos y cuidadosos con ceras de alta calidad para una piel lisa y sin irritaciones.",
-    services: [
-      {
-        name: "Depilación Brasileña",
-        desc: "Cera especial de baja temperatura para una depilación completa y duradera de la zona íntima.",
-        duration: "30 min",
-      },
-      {
-        name: "Depilación de Piernas",
-        desc: "Cera de calidad para una depilación precisa de piernas completas o medias piernas.",
-        duration: "30 / 45 min",
-      },
-      {
-        name: "Depilación de Axilas",
-        desc: "Cera suave y precisa para una zona sensible, con calming post-depilación.",
-        duration: "15 min",
-      },
-      {
-        name: "Depilación Facial",
-        desc: "Labio superior, cejas o bigote con técnica de hilo o cera para resultados precisos.",
-        duration: "15 min",
+        name: "Sesión de Aparatología",
+        desc: "Sesión individual de aparatología para trabajar la zona que más necesites.",
+        duration: "1 sesión",
+        price: "$450",
+        tag: null,
       },
     ],
   },
 ];
+
+/* Isotipo pequeño para decoración */
+function LotusSmall() {
+  return (
+    <svg width="20" height="22" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 9 C16 9 12 13 12 17.5 C12 20.5 13.8 22.5 16 23.5 C18.2 22.5 20 20.5 20 17.5 C20 13 16 9 16 9Z" stroke="#D4AF7A" strokeWidth="1" fill="none"/>
+      <path d="M16 9 C16 9 9 12 9 18 C9 21 11.5 23 14 23.5" stroke="#D4AF7A" strokeWidth="1" fill="none"/>
+      <path d="M16 9 C16 9 23 12 23 18 C23 21 20.5 23 18 23.5" stroke="#D4AF7A" strokeWidth="1" fill="none"/>
+      <path d="M8 26 Q16 30 24 26" stroke="#D4AF7A" strokeWidth="1" fill="none"/>
+    </svg>
+  );
+}
 
 export default function ServiciosPage() {
   return (
@@ -161,9 +133,12 @@ export default function ServiciosPage() {
       {/* ── Header ── */}
       <section
         className="py-24 px-6 text-center"
-        style={{ background: "linear-gradient(135deg, #2d4a38 0%, #4f8260 100%)" }}
+        style={{ background: "linear-gradient(160deg, #2e3928 0%, #3D4A35 100%)" }}
       >
-        <p className="text-xs tracking-[0.5em] uppercase text-gold mb-4">
+        <p
+          className="text-[10px] tracking-[0.5em] uppercase text-gold mb-4"
+          style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
+        >
           Menú de tratamientos
         </p>
         <h1
@@ -172,19 +147,27 @@ export default function ServiciosPage() {
         >
           Nuestros Servicios
         </h1>
-        <div className="w-16 h-px bg-gold mx-auto mb-6" />
-        <p className="text-sage-pale text-base max-w-xl mx-auto">
-          Cada tratamiento en Spa Eloher está diseñado para ser una experiencia
-          única. Elige el que más te llame y déjate cuidar.
+        <div className="flex items-center gap-3 justify-center mb-6">
+          <div className="h-px w-10 bg-gold/40" />
+          <div className="w-1 h-1 rounded-full bg-gold" />
+          <div className="h-px w-10 bg-gold/40" />
+        </div>
+        <p
+          className="text-white/65 text-sm max-w-xl mx-auto mb-10"
+          style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
+        >
+          Cada tratamiento en EloHer está diseñado para ser una experiencia única.
+          Elige el que más te llame y déjate cuidar.
         </p>
 
         {/* Quick nav */}
-        <div className="flex flex-wrap justify-center gap-3 mt-10">
+        <div className="flex flex-wrap justify-center gap-3">
           {categories.map((cat) => (
             <a
               key={cat.id}
               href={`#${cat.id}`}
-              className="px-4 py-2 border border-sage-pale text-sage-pale text-xs tracking-widest uppercase hover:bg-white hover:text-sage-dark transition-colors duration-200"
+              className="px-5 py-2 border border-white/30 text-white/70 text-[10px] tracking-[0.2em] uppercase rounded-full hover:bg-white/10 hover:text-white transition-colors duration-200"
+              style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
             >
               {cat.label}
             </a>
@@ -192,47 +175,86 @@ export default function ServiciosPage() {
         </div>
       </section>
 
-      {/* ── Categories ── */}
-      <div className="bg-cream">
+      {/* ── Categorías ── */}
+      <div>
         {categories.map((cat, idx) => (
           <section
             key={cat.id}
             id={cat.id}
-            className={`py-24 px-6 ${idx % 2 === 1 ? "bg-[#f0ebe2]" : "bg-cream"}`}
+            className={`py-20 px-6 ${idx % 2 === 0 ? "bg-warm-white" : "bg-beige"}`}
           >
-            <div className="max-w-6xl mx-auto">
-              {/* Category header */}
-              <div className="mb-12 max-w-2xl">
-                <p className="text-xs tracking-[0.4em] uppercase text-gold mb-3">
-                  {cat.label}
-                </p>
+            <div className="max-w-5xl mx-auto">
+              {/* Encabezado de categoría */}
+              <div className="mb-12 text-center md:text-left">
+                <div className="flex items-center gap-3 justify-center md:justify-start mb-3">
+                  <LotusSmall />
+                  <p
+                    className="text-[10px] tracking-[0.4em] uppercase text-gold"
+                    style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
+                  >
+                    {cat.label}
+                  </p>
+                </div>
                 <h2
-                  className="text-4xl md:text-5xl text-sage-dark mb-4"
-                  style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+                  className="text-4xl md:text-5xl text-olive mb-4"
+                  style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 400 }}
                 >
                   {cat.title}
                 </h2>
-                <div className="w-10 h-px bg-gold mb-5" />
-                <p className="text-base text-[#555] leading-relaxed">{cat.intro}</p>
+                <div className="h-px w-12 bg-gold mb-5 mx-auto md:mx-0" />
+                <p
+                  className="text-sm text-taupe leading-relaxed max-w-xl"
+                  style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
+                >
+                  {cat.intro}
+                </p>
               </div>
 
-              {/* Services grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Grid de servicios */}
+              <div className={`grid gap-5 ${cat.services.length === 3 ? "grid-cols-1 sm:grid-cols-3" : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"}`}>
                 {cat.services.map((svc) => (
                   <div
                     key={svc.name}
-                    className="bg-white p-6 border-l-2 border-sage-pale hover:border-sage transition-colors duration-300"
+                    className="bg-white p-6 flex flex-col gap-3 border-t-2 border-sage/30 hover:border-gold transition-colors duration-300 hover:shadow-sm relative"
                   >
+                    {/* Badge */}
+                    {svc.tag && (
+                      <span
+                        className="absolute top-4 right-4 px-2.5 py-1 bg-beige text-[9px] tracking-[0.15em] uppercase text-taupe rounded-full"
+                        style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
+                      >
+                        {svc.tag}
+                      </span>
+                    )}
+
                     <h3
-                      className="text-xl text-sage-dark mb-2"
-                      style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+                      className="text-xl text-olive pr-16"
+                      style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 500 }}
                     >
                       {svc.name}
                     </h3>
-                    <p className="text-sm text-[#666] leading-relaxed mb-4">{svc.desc}</p>
-                    <p className="text-xs tracking-widest uppercase text-gold">
-                      ⏱ {svc.duration}
+
+                    <p
+                      className="text-sm text-taupe leading-relaxed flex-1"
+                      style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
+                    >
+                      {svc.desc}
                     </p>
+
+                    <div className="flex items-center justify-between pt-3 border-t border-beige mt-auto">
+                      <span
+                        className="text-[10px] tracking-[0.1em] text-sage uppercase"
+                        style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
+                      >
+                        ⏱ {svc.duration}
+                      </span>
+                      <span
+                        className="text-lg font-semibold text-olive"
+                        style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+                      >
+                        {svc.price}
+                      </span>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -244,24 +266,38 @@ export default function ServiciosPage() {
       {/* ── CTA ── */}
       <section
         className="py-20 px-6 text-center"
-        style={{ background: "linear-gradient(135deg, #2d4a38 0%, #4f8260 100%)" }}
+        style={{ background: "linear-gradient(160deg, #2e3928 0%, #3D4A35 100%)" }}
       >
         <h2
-          className="text-4xl md:text-5xl text-white mb-6"
+          className="text-4xl md:text-5xl text-white italic mb-4"
           style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 300 }}
         >
           ¿No sabes cuál elegir?
         </h2>
-        <p className="text-sage-pale mb-10 max-w-md mx-auto">
-          Nuestro equipo te ayudará a encontrar el tratamiento perfecto según
-          tus necesidades. ¡Escríbenos!
-        </p>
-        <Link
-          href="/contacto"
-          className="inline-block px-10 py-4 bg-gold text-white text-sm tracking-widest uppercase hover:bg-[#b8934f] transition-colors duration-300"
+        <p
+          className="text-white/60 text-sm mb-10 max-w-md mx-auto"
+          style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
         >
-          Contáctanos
-        </Link>
+          Contáctanos y te ayudamos a encontrar el tratamiento perfecto para ti.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="https://wa.me/521234567890"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 px-8 py-3.5 bg-gold text-olive font-medium text-[11px] tracking-[0.2em] uppercase rounded-full hover:bg-gold-dark hover:text-white transition-colors duration-300"
+            style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
+          >
+            💬 Escribir por WhatsApp
+          </a>
+          <Link
+            href="/contacto"
+            className="px-8 py-3.5 border border-white/40 text-white text-[11px] tracking-[0.2em] uppercase rounded-full hover:bg-white/10 transition-colors duration-300"
+            style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
+          >
+            Enviar Mensaje
+          </Link>
+        </div>
       </section>
     </>
   );
