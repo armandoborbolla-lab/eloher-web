@@ -10,30 +10,52 @@ const links = [
   { href: "/#opiniones", label: "Opiniones" },
 ];
 
+/* Isotipo loto EloHer */
+function LotusNav() {
+  return (
+    <svg width="32" height="36" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      {/* Destello superior */}
+      <path d="M16 1 L16.6 3 L18 2 L16.8 3.8 L18.5 4.5 L16.6 4.5 L17 6.5 L16 5 L15 6.5 L15.4 4.5 L13.5 4.5 L15.2 3.8 L14 2 L15.4 3Z" fill="#D4AF7A" opacity="0.9"/>
+      {/* Pétalo central */}
+      <path d="M16 9 C16 9 12 13 12 17.5 C12 20.5 13.8 22.5 16 23.5 C18.2 22.5 20 20.5 20 17.5 C20 13 16 9 16 9Z" stroke="#D4AF7A" strokeWidth="0.8" fill="none"/>
+      {/* Pétalos laterales internos */}
+      <path d="M16 9 C16 9 9 12 9 18 C9 21 11.5 23 14 23.5" stroke="#D4AF7A" strokeWidth="0.8" fill="none"/>
+      <path d="M16 9 C16 9 23 12 23 18 C23 21 20.5 23 18 23.5" stroke="#D4AF7A" strokeWidth="0.8" fill="none"/>
+      {/* Pétalos externos */}
+      <path d="M16 11 C16 11 5 14 5 21 C5 24.5 9 27 13 24" stroke="#D4AF7A" strokeWidth="0.8" fill="none"/>
+      <path d="M16 11 C16 11 27 14 27 21 C27 24.5 23 27 19 24" stroke="#D4AF7A" strokeWidth="0.8" fill="none"/>
+      {/* Base curva */}
+      <path d="M8 26 Q16 30 24 26" stroke="#D4AF7A" strokeWidth="0.8" fill="none"/>
+      {/* Punto esencia */}
+      <circle cx="16" cy="17.5" r="1" fill="#D4AF7A" opacity="0.6"/>
+    </svg>
+  );
+}
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full bg-sage-hero/95 backdrop-blur-sm sticky top-0 z-50">
+    <header className="w-full bg-olive/95 backdrop-blur-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          {/* Icono loto SVG inline */}
-          <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="opacity-90">
-            <path d="M20 8 C20 8, 14 14, 14 20 C14 24 16.5 27 20 28 C23.5 27 26 24 26 20 C26 14 20 8 20 8Z" stroke="#c9a96e" strokeWidth="1" fill="none"/>
-            <path d="M20 8 C20 8, 8 12, 8 22 C8 27 13 30 20 28" stroke="#c9a96e" strokeWidth="1" fill="none"/>
-            <path d="M20 8 C20 8, 32 12, 32 22 C32 27 27 30 20 28" stroke="#c9a96e" strokeWidth="1" fill="none"/>
-            <path d="M20 28 L20 36" stroke="#c9a96e" strokeWidth="1"/>
-            <path d="M14 34 Q20 32 26 34" stroke="#c9a96e" strokeWidth="1" fill="none"/>
-            <circle cx="20" cy="6" r="1.5" fill="#c9a96e"/>
-          </svg>
-          <span
-            className="text-2xl md:text-3xl text-white"
-            style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 400, fontStyle: "italic", letterSpacing: "0.02em" }}
-          >
-            EloHer
-          </span>
+          <LotusNav />
+          <div className="flex flex-col leading-none">
+            <span
+              className="text-2xl md:text-3xl text-white leading-none"
+              style={{ fontFamily: "var(--font-great-vibes), cursive" }}
+            >
+              EloHer
+            </span>
+            <span
+              className="text-[8px] tracking-[0.3em] uppercase text-gold mt-0.5"
+              style={{ fontFamily: "var(--font-montserrat), sans-serif", fontWeight: 300 }}
+            >
+              Beauty &amp; Wellness Spa
+            </span>
+          </div>
         </Link>
 
         {/* Desktop nav */}
@@ -42,14 +64,16 @@ export default function Navbar() {
             <Link
               key={href}
               href={href}
-              className="text-[11px] tracking-[0.2em] uppercase text-white/80 hover:text-white transition-colors duration-200 font-light"
+              className="text-[10px] tracking-[0.2em] uppercase text-white/75 hover:text-white transition-colors duration-200"
+              style={{ fontFamily: "var(--font-montserrat), sans-serif", fontWeight: 400 }}
             >
               {label}
             </Link>
           ))}
           <Link
             href="/contacto"
-            className="ml-2 px-5 py-2.5 bg-gold text-white text-[11px] tracking-[0.15em] uppercase rounded-full hover:bg-gold-dark transition-colors duration-200"
+            className="ml-2 px-5 py-2.5 bg-gold text-olive text-[10px] tracking-[0.15em] uppercase rounded-full hover:bg-gold-dark hover:text-white transition-colors duration-200 font-medium"
+            style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
           >
             Reservar
           </Link>
@@ -69,12 +93,12 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-sage-dark px-6 py-6 flex flex-col gap-5">
+        <div className="md:hidden bg-olive-mid px-6 py-6 flex flex-col gap-5">
           {links.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
-              className="text-sm tracking-[0.2em] uppercase text-white/80 hover:text-white transition-colors"
+              className="text-sm tracking-[0.2em] uppercase text-white/75 hover:text-white transition-colors"
               onClick={() => setOpen(false)}
             >
               {label}
@@ -82,7 +106,7 @@ export default function Navbar() {
           ))}
           <Link
             href="/contacto"
-            className="mt-2 text-center px-5 py-3 bg-gold text-white text-sm tracking-[0.15em] uppercase rounded-full"
+            className="mt-2 text-center px-5 py-3 bg-gold text-olive text-sm tracking-[0.15em] uppercase rounded-full font-medium"
             onClick={() => setOpen(false)}
           >
             Reservar

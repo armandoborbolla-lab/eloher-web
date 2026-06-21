@@ -1,50 +1,41 @@
 @import "tailwindcss";
 
 @theme {
-  /* Olive sage — tono apagado/oscuro como en la referencia */
-  --color-sage: #717d69;
-  --color-sage-dark: #4a5445;
-  --color-sage-mid: #5d6957;
-  --color-sage-light: #9aaa92;
-  --color-sage-pale: #c8d4c4;
-  --color-sage-hero: #6b7864;   /* tono hero principal */
+  /* ── Paleta oficial EloHer ── */
+  --color-gold:        #D4AF7A;   /* Dorado Champagne */
+  --color-gold-dark:   #b8924a;
+  --color-gold-light:  #e8d5b0;
+  --color-beige:       #F2E9DC;   /* Beige Arena */
+  --color-sage:        #A7B499;   /* Verde Salvia */
+  --color-sage-light:  #c8d4c0;
+  --color-olive:       #3D4A35;   /* Verde Olivo — color principal oscuro */
+  --color-olive-mid:   #4e5f44;
+  --color-taupe:       #7A6B58;   /* Taupe */
+  --color-warm-white:  #FAF7F2;   /* Blanco Cálido */
 
-  /* Fondos */
-  --color-cream: #f5f2ec;
-  --color-cream-dark: #e8e3da;
-  --color-stone: #f0ebe2;
+  /* Alias de conveniencia */
+  --color-cream:       #FAF7F2;
+  --color-cream-dark:  #F2E9DC;
 
-  /* Dorado elegante */
-  --color-gold: #c9a96e;
-  --color-gold-dark: #a8864a;
-  --color-gold-light: #e2cfa0;
-
-  --font-heading: var(--font-cormorant);
-  --font-sans: var(--font-lato);
+  /* Fuentes */
+  --font-script:   var(--font-great-vibes);   /* logo EloHer */
+  --font-heading:  var(--font-cormorant);     /* títulos de sección */
+  --font-sans:     var(--font-montserrat);    /* cuerpo */
 }
 
 :root {
-  --background: #f5f2ec;
+  --background: #FAF7F2;
   --foreground: #2a2a2a;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-lato), "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-montserrat), "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-cormorant), Georgia, "Times New Roman", serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-cormorant), Georgia, serif;
   letter-spacing: 0.01em;
-}
-
-.font-heading {
-  font-family: var(--font-cormorant), Georgia, "Times New Roman", serif;
 }
