@@ -1,22 +1,30 @@
 @import "tailwindcss";
 
 @theme {
-  --color-sage: #4f8260;
-  --color-sage-dark: #2d4a38;
-  --color-sage-mid: #3d6b4f;
-  --color-sage-light: #a8c5b5;
-  --color-sage-pale: #d4e6dc;
-  --color-cream: #f8f5f0;
-  --color-cream-dark: #ede8e0;
+  /* Olive sage — tono apagado/oscuro como en la referencia */
+  --color-sage: #717d69;
+  --color-sage-dark: #4a5445;
+  --color-sage-mid: #5d6957;
+  --color-sage-light: #9aaa92;
+  --color-sage-pale: #c8d4c4;
+  --color-sage-hero: #6b7864;   /* tono hero principal */
+
+  /* Fondos */
+  --color-cream: #f5f2ec;
+  --color-cream-dark: #e8e3da;
+  --color-stone: #f0ebe2;
+
+  /* Dorado elegante */
   --color-gold: #c9a96e;
-  --color-gold-light: #e8d5b0;
+  --color-gold-dark: #a8864a;
+  --color-gold-light: #e2cfa0;
 
   --font-heading: var(--font-cormorant);
   --font-sans: var(--font-lato);
 }
 
 :root {
-  --background: #f8f5f0;
+  --background: #f5f2ec;
   --foreground: #2a2a2a;
 }
 
