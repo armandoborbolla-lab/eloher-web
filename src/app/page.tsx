@@ -121,6 +121,39 @@ const testimonials = [
   },
 ];
 
+const faqs = [
+  {
+    q: "¿Necesito reservar con anticipación?",
+    a: "Sí, te recomendamos agendar tu cita con al menos 24 horas de anticipación para garantizarte el horario y el tratamiento que deseas. Puedes hacerlo fácilmente por WhatsApp o a través de nuestro formulario — respondemos rápido y con mucho gusto te orientamos.",
+  },
+  {
+    q: "¿Cuánto dura una sesión de facial o masaje?",
+    a: "Depende del tratamiento: los faciales tienen una duración de 60 a 90 minutos y los masajes de 45 a 75 minutos. Los tratamientos corporales pueden extenderse hasta 90 minutos. Al agendar tu cita te confirmamos el tiempo exacto para que puedas organizarte con calma.",
+  },
+  {
+    q: "¿Aceptan tarjetas de crédito o débito?",
+    a: "Sí, aceptamos pagos con tarjeta de crédito y débito, así como en efectivo. Queremos que tu experiencia sea cómoda y sin complicaciones desde el primer momento.",
+  },
+  {
+    q: "¿Tienen estacionamiento?",
+    a: "Sí, contamos con estacionamiento disponible en el edificio. Nos encontramos en el 2° piso de Real de Cumbres 458, Real Cumbres, Monterrey — fácil de llegar y con acceso muy cómodo.",
+  },
+  {
+    q: "¿Venden gift cards o paquetes de regalo?",
+    a: "¡Claro que sí! Tenemos gift cards y paquetes especiales, perfectos para regalar en cumpleaños, Día de las Madres, aniversarios o simplemente para consentir a alguien especial. Escríbenos por WhatsApp y diseñamos juntas el regalo ideal.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 const pillars: { title: string; desc: string; icon: "heart" | "shield" | "leaf" | "sparkle" }[] = [
   { title: "Cálida y Cercana", desc: "Te recibimos como en casa, con atención personalizada desde el primer momento.", icon: "heart" },
   { title: "Profesional y Confiable", desc: "Terapeutas certificadas con años de experiencia en bienestar y belleza.", icon: "shield" },
@@ -561,6 +594,56 @@ export default function HomePage() {
                     </div>
                   </div>
                 </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ PREGUNTAS FRECUENTES ═══ */}
+      <section className="py-24 px-6 bg-warm-white">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+        <div className="max-w-2xl mx-auto">
+          <FadeIn>
+            <div className="text-center mb-14">
+              <div className="flex items-center gap-4 justify-center mb-4">
+                <div className="h-px w-10 bg-gold/40" />
+                <p className="text-[10px] tracking-[0.45em] uppercase text-gold" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
+                  Resolvemos tus dudas
+                </p>
+                <div className="h-px w-10 bg-gold/40" />
+              </div>
+              <h2 className="text-4xl md:text-5xl text-olive" style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 400 }}>
+                Preguntas Frecuentes
+              </h2>
+            </div>
+          </FadeIn>
+
+          <div className="flex flex-col divide-y divide-sage/20">
+            {faqs.map((faq, i) => (
+              <FadeIn key={i} delay={i * 80}>
+                <details className="group py-1">
+                  <summary className="flex justify-between items-center gap-4 cursor-pointer py-5 list-none">
+                    <span
+                      className="text-base text-olive group-open:text-sage transition-colors duration-200"
+                      style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontSize: "1.15rem" }}
+                    >
+                      {faq.q}
+                    </span>
+                    <span className="text-gold text-xl flex-shrink-0 transition-transform duration-300 group-open:rotate-45">
+                      +
+                    </span>
+                  </summary>
+                  <p
+                    className="text-sm text-taupe leading-relaxed pb-5 pr-8"
+                    style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
+                  >
+                    {faq.a}
+                  </p>
+                </details>
               </FadeIn>
             ))}
           </div>
