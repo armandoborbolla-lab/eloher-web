@@ -2,9 +2,15 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Servicios",
-  description:
-    "Menú de tratamientos EloHer: faciales, masajes, tratamientos corporales y más. Precios y duración de cada servicio.",
+  title: "Servicios y Precios",
+  description: "Faciales, masajes y tratamientos corporales en Monterrey. Détox facial, masaje aromaterapéutico, drenaje linfático, reductivo y más. Precios desde $200.",
+  keywords: ["servicios spa Monterrey", "precios spa Monterrey", "facial Monterrey precio", "masaje Monterrey precio", "drenaje linfático Monterrey", "tratamiento reductivo Monterrey"],
+  alternates: { canonical: "https://eloher.com.mx/servicios" },
+  openGraph: {
+    title: "Servicios y Precios — EloHer Spa Monterrey",
+    description: "Faciales, masajes y tratamientos corporales en Monterrey. Precios desde $200.",
+    url: "https://eloher.com.mx/servicios",
+  },
 };
 
 /* ── Datos reales del menú EloHer ── */
