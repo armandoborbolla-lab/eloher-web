@@ -135,18 +135,18 @@ export default function HomePage() {
       <section
         className="relative min-h-screen flex items-center justify-center overflow-hidden -mt-20"
       >
-        {/* Foto de fondo */}
+        {/* Foto de fondo — velas con bokeh */}
         <Image
-          src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=85&w=1920&fit=crop"
+          src="https://images.unsplash.com/photo-1549465220-1129f7825702?q=85&w=1920&fit=crop"
           alt="EloHer Spa"
           fill
           className="object-cover"
           priority
         />
-        {/* Overlay olive suave — deja respirar la foto */}
+        {/* Overlay olive cálido — deja pasar el brillo de las velas */}
         <div
           className="absolute inset-0"
-          style={{ background: "linear-gradient(160deg, rgba(36,46,30,0.80) 0%, rgba(55,68,45,0.70) 60%, rgba(46,57,40,0.75) 100%)" }}
+          style={{ background: "linear-gradient(160deg, rgba(36,46,30,0.78) 0%, rgba(50,60,38,0.68) 60%, rgba(40,50,32,0.74) 100%)" }}
         />
         {/* Toque dorado muy sutil en el centro */}
         <div
