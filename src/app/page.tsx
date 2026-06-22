@@ -136,11 +136,11 @@ const faqs = [
   },
   {
     q: "¿Tienen estacionamiento?",
-    a: "Sí, contamos con estacionamiento disponible en el edificio. Nos encontramos en el 2° piso de Real de Cumbres 458, Real Cumbres, Monterrey — fácil de llegar y con acceso muy cómodo.",
+    a: "Sí, contamos con estacionamiento disponible. Nos encontramos en el 2° piso de Real de Cumbres 458, Real Cumbres, Monterrey — fácil de llegar y con acceso muy cómodo.",
   },
   {
     q: "¿Venden gift cards o paquetes de regalo?",
-    a: "¡Claro que sí! Tenemos gift cards y paquetes especiales, perfectos para regalar en cumpleaños, Día de las Madres, aniversarios o simplemente para consentir a alguien especial. Escríbenos por WhatsApp y diseñamos juntas el regalo ideal.",
+    a: "¡Claro que sí! Tenemos gift cards para sesiones individuales y también para nuestros paquetes con duración de hasta 6 meses, como el Contorno Facial Perfecto o el Reductivo Corporal — ideales para regalar en cumpleaños, Día de las Madres o aniversarios. Escríbenos por WhatsApp y diseñamos juntas el regalo ideal.",
   },
 ];
 
