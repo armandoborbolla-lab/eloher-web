@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 
@@ -11,34 +12,6 @@ const links = [
   { href: "/#opiniones", label: "Opiniones" },
 ];
 
-/* Isotipo oficial EloHer */
-function LotusNav() {
-  const hL = "M 0 0 C -5 -8, -7 -22, 0 -38 C 7 -22, 5 -8, 0 0 Z";
-  const hM = "M 0 0 C -4 -7, -6 -18, 0 -32 C 6 -18, 4 -7, 0 0 Z";
-  const hS = "M 0 0 C -3 -5, -5 -14, 0 -25 C 5 -14, 3 -5, 0 0 Z";
-  const hXS = "M 0 0 C -2.5 -4, -4 -10, 0 -18 C 4 -10, 2.5 -4, 0 0 Z";
-  return (
-    <svg width="34" height="34" viewBox="70 100 330 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M 368 201 A 152 152 0 1 1 317 141" stroke="#D4A65F" strokeWidth="6" strokeLinecap="round"/>
-      <path d="M 243 212 C 276 182, 310 157, 342 138" stroke="#A5AD98" strokeWidth="6" strokeLinecap="round"/>
-      <path d={hL} transform="translate(263 195) rotate(-62)" fill="#A5AD98"/>
-      <path d={hL} transform="translate(263 195) rotate(25)" fill="#A5AD98"/>
-      <path d={hM} transform="translate(283 178) rotate(-62)" fill="#A5AD98"/>
-      <path d={hM} transform="translate(283 178) rotate(25)" fill="#A5AD98"/>
-      <path d={hS} transform="translate(303 164) rotate(-60)" fill="#A5AD98"/>
-      <path d={hS} transform="translate(303 164) rotate(28)" fill="#A5AD98"/>
-      <path d={hXS} transform="translate(323 150) rotate(-58)" fill="#A5AD98"/>
-      <path d={hXS} transform="translate(323 150) rotate(30)" fill="#A5AD98"/>
-      <ellipse cx="218" cy="336" rx="78" ry="42" fill="#C0B298" fillOpacity="0.88"/>
-      <ellipse cx="217" cy="326" rx="66" ry="20" fill="#E2D8C4" fillOpacity="0.28"/>
-      <ellipse cx="218" cy="278" rx="54" ry="30" fill="#C0B298" fillOpacity="0.88"/>
-      <ellipse cx="217" cy="269" rx="44" ry="14" fill="#E2D8C4" fillOpacity="0.28"/>
-      <ellipse cx="217" cy="228" rx="32" ry="18" fill="#C0B298" fillOpacity="0.88"/>
-      <ellipse cx="216" cy="220" rx="26" ry="9" fill="#E2D8C4" fillOpacity="0.28"/>
-      <path d="M 140 382 C 188 360, 255 360, 303 382" stroke="#A5AD98" strokeWidth="9" strokeLinecap="round"/>
-    </svg>
-  );
-}
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -64,7 +37,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <LotusNav />
+          <Image src="/isotipo.png" alt="EloHer" width={36} height={36} className="object-contain" />
           <div className="flex flex-col leading-none">
             <span
               className="text-2xl md:text-3xl text-white leading-none"

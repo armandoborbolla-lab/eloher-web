@@ -160,7 +160,7 @@ export default function HomePage() {
         />
         <div className="relative z-10 text-center px-6 max-w-2xl mx-auto pt-20">
           <div className="flex justify-center mb-4">
-            <Image src="/isotipo.png" alt="EloHer" width={88} height={88} className="object-contain" />
+            <Image src="/isotipo.png" alt="EloHer" width={130} height={130} className="object-contain" />
           </div>
           <h1
             className="text-8xl md:text-[7rem] text-white leading-none mb-2"
