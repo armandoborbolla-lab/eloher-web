@@ -74,6 +74,7 @@ export const metadata: Metadata = {
     images: [OG_IMAGE],
   },
   alternates: { canonical: SITE_URL },
+  verification: { google: "PeMN-NhMm4CTNSdHTx1iu3gtHwn4xVC-GqLa48SvTFQ" },
 };
 
 const jsonLd = {
