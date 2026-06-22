@@ -3,7 +3,7 @@ import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contacto y Ubicación",
-  description: "Agenda tu cita en EloHer Spa, Real Cumbres 458, Monterrey. Lun–Vie 8:30–7pm, Sáb 10–6pm. Escríbenos y respondemos en menos de 24 horas.",
+  description: "Agenda tu cita en EloHer Spa boutique, Real Cumbres 458, Monterrey. Lun–Vie 8:30–7pm, Sáb 10–6pm. Escríbenos y respondemos en menos de 24 horas.",
   keywords: ["agendar cita spa Monterrey", "spa Real Cumbres Monterrey", "contacto spa Monterrey", "reservar masaje Monterrey"],
   alternates: { canonical: "https://eloher.com.mx/contacto" },
   openGraph: {
