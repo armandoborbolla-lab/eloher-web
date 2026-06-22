@@ -100,6 +100,27 @@ const featuredServices = [
   },
 ];
 
+const testimonials = [
+  {
+    quote: "Salí completamente renovada. El trato fue cálido desde que entré y el facial dejó mi piel increíble. Ya soy clienta fija.",
+    name: "Mariana G.",
+    tag: "Cliente frecuente",
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=120&h=120&fit=crop&crop=face",
+  },
+  {
+    quote: "El masaje fue exactamente lo que necesitaba. Un espacio precioso, tranquilo y muy profesional. Lo recomiendo totalmente.",
+    name: "Paola R.",
+    tag: "Primera visita",
+    avatar: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?q=80&w=120&h=120&fit=crop&crop=face",
+  },
+  {
+    quote: "Los resultados se notan. Llevo varios tratamientos y mi piel nunca había estado mejor. Atención de primera, cada detalle cuidado.",
+    name: "Andrea L.",
+    tag: "Cliente frecuente",
+    avatar: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=120&h=120&fit=crop&crop=face",
+  },
+];
+
 const pillars: { title: string; desc: string; icon: "heart" | "shield" | "leaf" | "sparkle" }[] = [
   { title: "Cálida y Cercana", desc: "Te recibimos como en casa, con atención personalizada desde el primer momento.", icon: "heart" },
   { title: "Profesional y Confiable", desc: "Terapeutas certificadas con años de experiencia en bienestar y belleza.", icon: "shield" },
@@ -373,6 +394,85 @@ export default function HomePage() {
                   <p className="text-sm text-taupe leading-relaxed" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
                     {p.desc}
                   </p>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ TESTIMONIOS ═══ */}
+      <section className="py-24 px-6 bg-beige" id="opiniones">
+        <div className="max-w-5xl mx-auto">
+          <FadeIn>
+            <div className="text-center mb-14">
+              <div className="flex items-center gap-4 justify-center mb-4">
+                <div className="h-px w-10 bg-gold/40" />
+                <p
+                  className="text-[10px] tracking-[0.45em] uppercase text-gold"
+                  style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
+                >
+                  Lo que dicen de nosotras
+                </p>
+                <div className="h-px w-10 bg-gold/40" />
+              </div>
+              <h2
+                className="text-4xl md:text-5xl text-olive"
+                style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 400 }}
+              >
+                Clientas que se sienten en casa
+              </h2>
+            </div>
+          </FadeIn>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {testimonials.map((t, i) => (
+              <FadeIn key={t.name} delay={i * 130}>
+                <div className="bg-warm-white rounded-2xl p-7 flex flex-col gap-5 shadow-sm">
+                  {/* Comilla decorativa */}
+                  <span
+                    className="text-4xl text-gold/40 leading-none"
+                    style={{ fontFamily: "Georgia, serif" }}
+                  >
+                    &ldquo;
+                  </span>
+                  {/* Testimonio */}
+                  <p
+                    className="text-base text-taupe leading-relaxed italic flex-1"
+                    style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 400 }}
+                  >
+                    {t.quote}
+                  </p>
+                  {/* Estrellas */}
+                  <div className="flex gap-1 text-gold text-sm">
+                    {"★★★★★".split("").map((s, j) => (
+                      <span key={j}>{s}</span>
+                    ))}
+                  </div>
+                  {/* Autor */}
+                  <div className="flex items-center gap-3 pt-2 border-t border-beige">
+                    <Image
+                      src={t.avatar}
+                      alt={t.name}
+                      width={44}
+                      height={44}
+                      className="rounded-full object-cover"
+                    />
+                    <div>
+                      <p
+                        className="text-sm font-medium text-olive"
+                        style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
+                      >
+                        {t.name}
+                      </p>
+                      <p
+                        className="text-[10px] tracking-[0.1em] text-gold"
+                        style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
+                      >
+                        {t.tag}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </FadeIn>
             ))}
