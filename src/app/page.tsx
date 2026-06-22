@@ -132,7 +132,7 @@ const faqs = [
   },
   {
     q: "¿Aceptan tarjetas de crédito o débito?",
-    a: "Sí, aceptamos pagos con tarjeta de crédito y débito, así como en efectivo. Queremos que tu experiencia sea cómoda y sin complicaciones desde el primer momento.",
+    a: "Sí, aceptamos pagos con tarjeta de crédito y débito, así como en efectivo — sin comisiones adicionales. Queremos que tu única preocupación sea disfrutar.",
   },
   {
     q: "¿Tienen estacionamiento?",
