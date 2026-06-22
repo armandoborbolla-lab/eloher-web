@@ -117,21 +117,29 @@ const categories = [
 
 /* Isotipo pequeño para decoración */
 function LotusSmall() {
+  const hM = "M 0 0 C -4 -7, -6 -18, 0 -32 C 6 -18, 4 -7, 0 0 Z";
+  const hS = "M 0 0 C -3 -5, -5 -14, 0 -25 C 5 -14, 3 -5, 0 0 Z";
+  const hXS = "M 0 0 C -2.5 -4, -4 -10, 0 -18 C 4 -10, 2.5 -4, 0 0 Z";
   return (
-    <svg width="22" height="22" viewBox="75 100 315 305" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M 360 175 A 152 152 0 1 1 311 130" stroke="#D4A65F" strokeWidth="7" strokeLinecap="round"/>
-      <path d="M 245 215 C 278 185, 315 155, 335 132" stroke="#A5AD98" strokeWidth="7" strokeLinecap="round"/>
-      <ellipse cx="250" cy="183" rx="7" ry="38" transform="rotate(-70 250 183)" fill="#A5AD98"/>
-      <ellipse cx="277" cy="186" rx="7" ry="38" transform="rotate(-18 277 186)" fill="#A5AD98"/>
-      <ellipse cx="275" cy="160" rx="6.5" ry="34" transform="rotate(-68 275 160)" fill="#A5AD98"/>
-      <ellipse cx="303" cy="162" rx="6.5" ry="34" transform="rotate(-16 303 162)" fill="#A5AD98"/>
-      <ellipse cx="298" cy="140" rx="6" ry="29" transform="rotate(-65 298 140)" fill="#A5AD98"/>
-      <ellipse cx="324" cy="143" rx="6" ry="29" transform="rotate(-14 324 143)" fill="#A5AD98"/>
-      <ellipse cx="322" cy="128" rx="5" ry="23" transform="rotate(-60 322 128)" fill="#A5AD98"/>
-      <ellipse cx="220" cy="230" rx="30" ry="18" fill="#E8DDD0"/>
-      <ellipse cx="220" cy="273" rx="52" ry="28" fill="#D8CCBE"/>
-      <ellipse cx="220" cy="332" rx="78" ry="40" fill="#B7B49F"/>
-      <path d="M 142 375 C 192 355, 258 355, 308 375" stroke="#A5AD98" strokeWidth="9" strokeLinecap="round"/>
+    <svg width="22" height="22" viewBox="70 100 330 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M 368 201 A 152 152 0 1 1 317 141" stroke="#D4A65F" strokeWidth="6" strokeLinecap="round"/>
+      <path d="M 243 212 C 276 182, 310 157, 342 138" stroke="#A5AD98" strokeWidth="6" strokeLinecap="round"/>
+      <path d={hM} transform="translate(263 195) rotate(-62)" fill="#A5AD98"/>
+      <path d={hM} transform="translate(263 195) rotate(25)" fill="#A5AD98"/>
+      <path d={hS} transform="translate(293 170) rotate(-60)" fill="#A5AD98"/>
+      <path d={hS} transform="translate(293 170) rotate(28)" fill="#A5AD98"/>
+      <path d={hXS} transform="translate(320 152) rotate(-58)" fill="#A5AD98"/>
+      <path d={hXS} transform="translate(320 152) rotate(30)" fill="#A5AD98"/>
+      <ellipse cx="218" cy="336" rx="78" ry="42" fill="#B8AA90"/>
+      <ellipse cx="218" cy="328" rx="74" ry="30" fill="#D4C8B0"/>
+      <ellipse cx="215" cy="320" rx="62" ry="17" fill="#E8DDD0"/>
+      <ellipse cx="218" cy="278" rx="54" ry="30" fill="#B8AA90"/>
+      <ellipse cx="218" cy="271" rx="50" ry="21" fill="#D4C8B0"/>
+      <ellipse cx="215" cy="264" rx="40" ry="13" fill="#E8DDD0"/>
+      <ellipse cx="217" cy="228" rx="32" ry="18" fill="#B8AA90"/>
+      <ellipse cx="217" cy="222" rx="29" ry="13" fill="#D4C8B0"/>
+      <ellipse cx="215" cy="217" rx="22" ry="8" fill="#E8DDD0"/>
+      <path d="M 140 382 C 188 360, 255 360, 303 382" stroke="#A5AD98" strokeWidth="9" strokeLinecap="round"/>
     </svg>
   );
 }
