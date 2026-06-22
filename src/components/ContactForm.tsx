@@ -26,6 +26,7 @@ export default function ContactForm() {
   });
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
+  const [error, setError] = useState(false);
 
   function handleChange(
     e: React.ChangeEvent<
@@ -38,10 +39,32 @@ export default function ContactForm() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setSending(true);
-    // TODO: conectar a Resend / EmailJS / WhatsApp API
-    await new Promise((r) => setTimeout(r, 1000));
-    setSending(false);
-    setSent(true);
+    setError(false);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: "5697779e-0c7a-4da7-bb95-f86c80927bc6",
+          subject: `Nueva solicitud — ${form.servicio || "EloHer Spa"}`,
+          from_name: "EloHer Spa Website",
+          name: form.nombre,
+          email: form.email,
+          phone: form.telefono,
+          service: form.servicio,
+          message: form.mensaje || "Sin mensaje adicional.",
+        }),
+      });
+      if (res.ok) {
+        setSent(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setSending(false);
+    }
   }
 
   if (sent) {
@@ -159,6 +182,12 @@ export default function ContactForm() {
       >
         {sending ? "Enviando…" : "Enviar Mensaje"}
       </button>
+
+      {error && (
+        <p className="text-sm text-red-500 text-center">
+          Hubo un problema al enviar. Intenta de nuevo o escríbenos por WhatsApp.
+        </p>
+      )}
 
       <p className="text-xs text-[#999] leading-relaxed">
         También puedes escribirnos directamente por{" "}
