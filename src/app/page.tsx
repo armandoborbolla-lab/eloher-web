@@ -137,7 +137,7 @@ export default function HomePage() {
       >
         {/* Foto de fondo */}
         <Image
-          src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=85&w=1920&fit=crop"
+          src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=85&w=1920&fit=crop"
           alt="EloHer Spa"
           fill
           className="object-cover"
