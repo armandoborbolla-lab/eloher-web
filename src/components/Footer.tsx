@@ -56,7 +56,15 @@ export default function Footer() {
           >
             Contáctanos
           </h3>
-          <p className="text-sm text-white/55">📍 Tu dirección, Ciudad, México</p>
+          <a
+            href="https://maps.google.com/?q=Real+de+Cumbres+458,+Real+Cumbres,+64346+Monterrey,+N.L."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-white/55 hover:text-white transition-colors leading-relaxed"
+          >
+            📍 Real de Cumbres 458, Real Cumbres<br />
+            Monterrey, N.L. — 2° Piso
+          </a>
           <a
             href="https://wa.me/521234567890"
             target="_blank"
@@ -78,8 +86,9 @@ export default function Footer() {
             >
               Horarios
             </p>
-            <p className="text-sm text-white/55">Lun – Sáb: 9:00 am – 7:00 pm</p>
-            <p className="text-sm text-white/55">Domingo: 10:00 am – 5:00 pm</p>
+            <p className="text-sm text-white/55">Lun – Vie: 8:30 am – 7:00 pm</p>
+            <p className="text-sm text-white/55">Sábado: 10:00 am – 6:00 pm</p>
+            <p className="text-sm text-white/55">Domingo: Bajo reservación</p>
           </div>
         </div>
       </div>

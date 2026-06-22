@@ -11,8 +11,8 @@ const info = [
   {
     icon: "📍",
     label: "Dirección",
-    value: "Tu calle y número, Colonia, Ciudad, México",
-    href: null,
+    value: "Real de Cumbres 458, Real Cumbres\n64346 Monterrey, N.L. — 2° Piso",
+    href: "https://maps.google.com/?q=Real+de+Cumbres+458,+Real+Cumbres,+64346+Monterrey,+N.L.",
   },
   {
     icon: "📞",
@@ -29,9 +29,9 @@ const info = [
 ];
 
 const hours = [
-  { day: "Lunes – Viernes", time: "9:00 am – 7:00 pm" },
-  { day: "Sábado", time: "9:00 am – 6:00 pm" },
-  { day: "Domingo", time: "10:00 am – 4:00 pm" },
+  { day: "Lunes – Viernes", time: "8:30 am – 7:00 pm" },
+  { day: "Sábado", time: "10:00 am – 6:00 pm" },
+  { day: "Domingo", time: "Bajo reservación" },
 ];
 
 export default function ContactoPage() {
@@ -129,17 +129,18 @@ export default function ContactoPage() {
               </div>
             </div>
 
-            {/* Map placeholder */}
-            <div
-              className="h-48 flex items-center justify-center border border-sage-pale bg-sage-pale/30"
-              aria-label="Mapa de ubicación próximamente"
-            >
-              <div className="text-center text-[#999]">
-                <span className="block text-3xl mb-2">📍</span>
-                <p className="text-xs tracking-widest uppercase">
-                  Mapa próximamente
-                </p>
-              </div>
+            {/* Mapa Google Maps */}
+            <div className="rounded-xl overflow-hidden border border-sage/20 shadow-sm">
+              <iframe
+                src="https://maps.google.com/maps?q=Real+de+Cumbres+458,+Real+Cumbres,+64346+Monterrey,+N.L.&output=embed&z=16"
+                width="100%"
+                height="220"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="EloHer Spa — Ubicación"
+              />
             </div>
           </div>
         </div>
