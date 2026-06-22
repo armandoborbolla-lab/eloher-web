@@ -27,16 +27,13 @@ function LotusIcon({ size = 64 }: { size?: number }) {
       <path d={hS} transform="translate(303 164) rotate(28)" fill="#A5AD98"/>
       <path d={hXS} transform="translate(323 150) rotate(-58)" fill="#A5AD98"/>
       <path d={hXS} transform="translate(323 150) rotate(30)" fill="#A5AD98"/>
-      {/* Piedras zen — 3 capas por piedra para efecto 3D cálido */}
-      <ellipse cx="218" cy="336" rx="78" ry="42" fill="#B8AA90"/>
-      <ellipse cx="218" cy="328" rx="74" ry="30" fill="#D4C8B0"/>
-      <ellipse cx="215" cy="320" rx="62" ry="17" fill="#E8DDD0"/>
-      <ellipse cx="218" cy="278" rx="54" ry="30" fill="#B8AA90"/>
-      <ellipse cx="218" cy="271" rx="50" ry="21" fill="#D4C8B0"/>
-      <ellipse cx="215" cy="264" rx="40" ry="13" fill="#E8DDD0"/>
-      <ellipse cx="217" cy="228" rx="32" ry="18" fill="#B8AA90"/>
-      <ellipse cx="217" cy="222" rx="29" ry="13" fill="#D4C8B0"/>
-      <ellipse cx="215" cy="217" rx="22" ry="8" fill="#E8DDD0"/>
+      {/* Piedras zen — 2 capas suaves */}
+      <ellipse cx="218" cy="336" rx="78" ry="42" fill="#C8BAA0"/>
+      <ellipse cx="217" cy="327" rx="68" ry="24" fill="#DDD2BE" fillOpacity="0.7"/>
+      <ellipse cx="218" cy="278" rx="54" ry="30" fill="#C8BAA0"/>
+      <ellipse cx="217" cy="270" rx="46" ry="17" fill="#DDD2BE" fillOpacity="0.7"/>
+      <ellipse cx="217" cy="228" rx="32" ry="18" fill="#C8BAA0"/>
+      <ellipse cx="216" cy="221" rx="27" ry="11" fill="#DDD2BE" fillOpacity="0.7"/>
       {/* Base ondulada */}
       <path d="M 140 382 C 188 360, 255 360, 303 382" stroke="#A5AD98" strokeWidth="9" strokeLinecap="round"/>
     </svg>
