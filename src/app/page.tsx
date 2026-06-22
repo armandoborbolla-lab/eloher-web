@@ -390,53 +390,57 @@ export default function HomePage() {
             </div>
           </FadeIn>
 
-          {/* Galería — placeholder hasta tener fotos reales */}
+          {/* Galería */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 h-[420px] md:h-[500px]">
-            {/* Foto izquierda — grande */}
+            {/* Izquierda — alta */}
             <FadeIn className="row-span-2" delay={0}>
-              <div className="h-full rounded-2xl overflow-hidden" style={{ background: "linear-gradient(160deg, #2e3928 0%, #3D4A35 100%)" }}>
-                <div className="h-full flex flex-col items-center justify-end p-6">
-                  <LotusIcon size={48} />
-                  <p className="text-white/30 text-[9px] tracking-[0.3em] uppercase mt-4" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
-                    Próximamente
-                  </p>
-                </div>
+              <div className="relative h-full rounded-2xl overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800&fit=crop"
+                  alt="Masaje EloHer"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-700"
+                  sizes="33vw"
+                />
               </div>
             </FadeIn>
-            {/* Foto centro-arriba */}
+            {/* Centro arriba */}
             <FadeIn delay={100}>
-              <div className="h-full rounded-2xl overflow-hidden" style={{ background: "linear-gradient(135deg, #4e5f44 0%, #3D4A35 100%)" }}>
-                <div className="h-full flex items-center justify-center">
-                  <LotusIcon size={32} />
-                </div>
+              <div className="relative h-full rounded-2xl overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=800&fit=crop"
+                  alt="Facial EloHer"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-700"
+                  sizes="33vw"
+                />
               </div>
             </FadeIn>
-            {/* Foto derecha — grande */}
+            {/* Derecha — alta */}
             <FadeIn className="row-span-2" delay={200}>
-              <div className="h-full rounded-2xl overflow-hidden" style={{ background: "linear-gradient(160deg, #7A6B58 0%, #5c5144 100%)" }}>
-                <div className="h-full flex flex-col items-center justify-end p-6">
-                  <LotusIcon size={40} />
-                  <p className="text-white/30 text-[9px] tracking-[0.3em] uppercase mt-4" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
-                    Próximamente
-                  </p>
-                </div>
+              <div className="relative h-full rounded-2xl overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=800&fit=crop"
+                  alt="Espacio EloHer"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-700"
+                  sizes="33vw"
+                />
               </div>
             </FadeIn>
-            {/* Foto centro-abajo */}
+            {/* Centro abajo */}
             <FadeIn delay={150}>
-              <div className="h-full rounded-2xl overflow-hidden" style={{ background: "linear-gradient(135deg, #A5AD98 0%, #8a9480 100%)" }}>
-                <div className="h-full flex items-center justify-center">
-                  <LotusIcon size={28} />
-                </div>
+              <div className="relative h-full rounded-2xl overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800&fit=crop"
+                  alt="Bienestar EloHer"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-700"
+                  sizes="33vw"
+                />
               </div>
             </FadeIn>
           </div>
-
-          <FadeIn delay={300}>
-            <p className="text-center text-[10px] tracking-[0.3em] uppercase text-taupe/50 mt-5" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
-              Fotos reales del espacio próximamente
-            </p>
-          </FadeIn>
         </div>
       </section>
 
