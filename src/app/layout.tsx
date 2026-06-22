@@ -103,7 +103,6 @@ const jsonLd = {
   ],
   email: "hola@eloher.com.mx",
   priceRange: "$$",
-  servesCuisine: undefined,
   areaServed: { "@type": "City", name: "Monterrey" },
   hasMap: "https://maps.google.com/?q=Real+de+Cumbres+458,+Real+Cumbres,+64346+Monterrey,+N.L.",
   sameAs: ["https://eloher.com.mx"],
@@ -117,13 +116,11 @@ export default function RootLayout({
       lang="es"
       className={`${greatVibes.variable} ${cormorant.variable} ${montserrat.variable}`}
     >
-      <head>
+      <body className="min-h-screen flex flex-col bg-warm-white text-[#2a2a2a]">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-      </head>
-      <body className="min-h-screen flex flex-col bg-warm-white text-[#2a2a2a]">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
