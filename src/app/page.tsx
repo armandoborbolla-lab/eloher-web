@@ -368,8 +368,80 @@ export default function HomePage() {
         </FadeIn>
       </section>
 
-      {/* ═══ PILARES ═══ */}
+      {/* ═══ EL ESPACIO ═══ */}
       <section className="py-24 px-6 bg-warm-white" id="espacio">
+        <div className="max-w-5xl mx-auto">
+          <FadeIn>
+            <div className="text-center mb-12">
+              <div className="flex items-center gap-4 justify-center mb-4">
+                <div className="h-px w-10 bg-gold/40" />
+                <p className="text-[10px] tracking-[0.45em] uppercase text-gold" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
+                  Conoce nuestro espacio
+                </p>
+                <div className="h-px w-10 bg-gold/40" />
+              </div>
+              <h2 className="text-4xl md:text-5xl text-olive mb-4" style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 400 }}>
+                Un rincón pensado para ti
+              </h2>
+              <p className="text-sm text-taupe max-w-xl mx-auto leading-relaxed" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
+                Cada detalle fue diseñado para que, desde el momento en que entras,
+                sientas que el mundo exterior queda atrás.
+              </p>
+            </div>
+          </FadeIn>
+
+          {/* Galería — placeholder hasta tener fotos reales */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 h-[420px] md:h-[500px]">
+            {/* Foto izquierda — grande */}
+            <FadeIn className="row-span-2" delay={0}>
+              <div className="h-full rounded-2xl overflow-hidden" style={{ background: "linear-gradient(160deg, #2e3928 0%, #3D4A35 100%)" }}>
+                <div className="h-full flex flex-col items-center justify-end p-6">
+                  <LotusIcon size={48} />
+                  <p className="text-white/30 text-[9px] tracking-[0.3em] uppercase mt-4" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
+                    Próximamente
+                  </p>
+                </div>
+              </div>
+            </FadeIn>
+            {/* Foto centro-arriba */}
+            <FadeIn delay={100}>
+              <div className="h-full rounded-2xl overflow-hidden" style={{ background: "linear-gradient(135deg, #4e5f44 0%, #3D4A35 100%)" }}>
+                <div className="h-full flex items-center justify-center">
+                  <LotusIcon size={32} />
+                </div>
+              </div>
+            </FadeIn>
+            {/* Foto derecha — grande */}
+            <FadeIn className="row-span-2" delay={200}>
+              <div className="h-full rounded-2xl overflow-hidden" style={{ background: "linear-gradient(160deg, #7A6B58 0%, #5c5144 100%)" }}>
+                <div className="h-full flex flex-col items-center justify-end p-6">
+                  <LotusIcon size={40} />
+                  <p className="text-white/30 text-[9px] tracking-[0.3em] uppercase mt-4" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
+                    Próximamente
+                  </p>
+                </div>
+              </div>
+            </FadeIn>
+            {/* Foto centro-abajo */}
+            <FadeIn delay={150}>
+              <div className="h-full rounded-2xl overflow-hidden" style={{ background: "linear-gradient(135deg, #A5AD98 0%, #8a9480 100%)" }}>
+                <div className="h-full flex items-center justify-center">
+                  <LotusIcon size={28} />
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+
+          <FadeIn delay={300}>
+            <p className="text-center text-[10px] tracking-[0.3em] uppercase text-taupe/50 mt-5" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
+              Fotos reales del espacio próximamente
+            </p>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* ═══ PILARES ═══ */}
+      <section className="py-24 px-6 bg-beige" id="por-que">
         <div className="max-w-5xl mx-auto">
           <FadeIn>
             <div className="text-center mb-16">

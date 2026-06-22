@@ -3,17 +3,21 @@
 import { useState } from "react";
 
 const services = [
-  "Masaje Sueco Relajante",
-  "Masaje de Tejido Profundo",
-  "Masaje con Piedras Calientes",
-  "Masaje Aromaterapia",
-  "Facial Hidratante",
-  "Facial Anti-Edad",
-  "Ritual Corporal",
-  "Manicure Spa",
-  "Pedicure Spa",
-  "Depilación",
-  "Otro / No sé",
+  "— Faciales —",
+  "Détox Facial",
+  "Hidratación Profunda",
+  "Vitamínico",
+  "Beauty Lift",
+  "— Masajes —",
+  "Masaje Aromaterapéutico",
+  "Masaje Aroma Profundo",
+  "Drenaje Linfático",
+  "Masaje de Espalda",
+  "— Tratamientos Corporales —",
+  "Contorno Facial Perfecto",
+  "Reductivo Abdomen y Laterales",
+  "Sesión de Aparatología",
+  "No sé / Quiero asesoría",
 ];
 
 export default function ContactForm() {
@@ -152,11 +156,15 @@ export default function ContactForm() {
             className="w-full border border-[#ddd] bg-white px-4 py-3 text-sm text-[#2a2a2a] focus:outline-none focus:border-sage transition-colors appearance-none"
           >
             <option value="">Selecciona uno…</option>
-            {services.map((s) => (
-              <option key={s} value={s}>
-                {s}
-              </option>
-            ))}
+            {services.map((s) =>
+              s.startsWith("—") ? (
+                <option key={s} value="" disabled style={{ color: "#aaa", fontStyle: "italic" }}>
+                  {s}
+                </option>
+              ) : (
+                <option key={s} value={s}>{s}</option>
+              )
+            )}
           </select>
         </div>
       </div>
