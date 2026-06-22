@@ -5,19 +5,25 @@ export const metadata: Metadata = {
   title: "EloHer Beauty & Wellness Spa",
 };
 
-/* Isotipo loto oficial EloHer */
+/* Isotipo oficial EloHer — piedras zen + rama botánica */
 function LotusIcon({ size = 64 }: { size?: number }) {
-  const s = size / 32;
   return (
-    <svg width={size} height={size * 1.1} viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16 1 L16.6 3 L18 2 L16.8 3.8 L18.5 4.5 L16.6 4.5 L17 6.5 L16 5 L15 6.5 L15.4 4.5 L13.5 4.5 L15.2 3.8 L14 2 L15.4 3Z" fill="#D4AF7A"/>
-      <path d="M16 9 C16 9 12 13 12 17.5 C12 20.5 13.8 22.5 16 23.5 C18.2 22.5 20 20.5 20 17.5 C20 13 16 9 16 9Z" stroke="#D4AF7A" strokeWidth="0.8" fill="none"/>
-      <path d="M16 9 C16 9 9 12 9 18 C9 21 11.5 23 14 23.5" stroke="#D4AF7A" strokeWidth="0.8" fill="none"/>
-      <path d="M16 9 C16 9 23 12 23 18 C23 21 20.5 23 18 23.5" stroke="#D4AF7A" strokeWidth="0.8" fill="none"/>
-      <path d="M16 11 C16 11 5 14 5 21 C5 24.5 9 27 13 24" stroke="#D4AF7A" strokeWidth="0.8" fill="none"/>
-      <path d="M16 11 C16 11 27 14 27 21 C27 24.5 23 27 19 24" stroke="#D4AF7A" strokeWidth="0.8" fill="none"/>
-      <path d="M8 26 Q16 30 24 26" stroke="#D4AF7A" strokeWidth="0.8" fill="none"/>
-      <circle cx="16" cy="17.5" r="1" fill="#D4AF7A" opacity="0.7"/>
+    <svg width={size} height={Math.round(size * 1.15)} viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M 56 50 A 32 32 0 1 0 56 106" stroke="#D4AF7A" strokeWidth="1.4" fill="none" strokeLinecap="round"/>
+      <path d="M 45 70 C 54 57, 65 40, 72 22" stroke="#A7B499" strokeWidth="1.3" fill="none" strokeLinecap="round"/>
+      <ellipse cx="50" cy="62" rx="6" ry="2.2" transform="rotate(-55 50 62)" fill="#A7B499"/>
+      <ellipse cx="57" cy="60" rx="6" ry="2.2" transform="rotate(-20 57 60)" fill="#A7B499"/>
+      <ellipse cx="60" cy="47" rx="5.5" ry="2" transform="rotate(-50 60 47)" fill="#A7B499"/>
+      <ellipse cx="67" cy="45" rx="5.5" ry="2" transform="rotate(-15 67 45)" fill="#A7B499"/>
+      <ellipse cx="68" cy="33" rx="5" ry="1.9" transform="rotate(-48 68 33)" fill="#A7B499"/>
+      <ellipse cx="74" cy="31" rx="5" ry="1.9" transform="rotate(-12 74 31)" fill="#A7B499"/>
+      <ellipse cx="40" cy="95" rx="22" ry="8" fill="#c4b28c"/>
+      <ellipse cx="40" cy="93.5" rx="21" ry="6" fill="#ddd0b0"/>
+      <ellipse cx="40" cy="82" rx="16" ry="6.5" fill="#c4b28c"/>
+      <ellipse cx="40" cy="80.5" rx="15" ry="5" fill="#ddd0b0"/>
+      <ellipse cx="39" cy="71" rx="11" ry="5" fill="#c4b28c"/>
+      <ellipse cx="39" cy="69.5" rx="10" ry="3.8" fill="#ddd0b0"/>
+      <path d="M 14 103 Q 27 99.5, 40 103 Q 53 106.5, 66 103" stroke="#D4AF7A" strokeWidth="1.2" fill="none" strokeLinecap="round"/>
     </svg>
   );
 }
@@ -80,7 +86,7 @@ export default function HomePage() {
             className="text-8xl md:text-[7rem] text-white leading-none mb-2"
             style={{ fontFamily: "var(--font-great-vibes), cursive" }}
           >
-            EloHer
+            eloher
           </h1>
 
           {/* Subtítulo marca */}
@@ -103,7 +109,7 @@ export default function HomePage() {
             className="text-xl md:text-2xl text-white/85 italic mb-12"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 300 }}
           >
-            Belleza que se siente. Confianza que se nota.
+            Confianza, belleza y equilibrio en tu piel.
           </p>
 
           {/* CTAs */}
@@ -242,7 +248,7 @@ export default function HomePage() {
             className="text-3xl md:text-4xl text-white italic leading-relaxed mb-6"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 300 }}
           >
-            "Belleza que se siente. Confianza que se nota."
+            "Confianza, belleza y equilibrio en tu piel."
           </blockquote>
           <div className="flex items-center gap-3 justify-center mb-4">
             <div className="h-px w-8 bg-gold/50" />

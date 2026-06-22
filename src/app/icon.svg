@@ -1,25 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <!-- Fondo círculo olivo -->
   <circle cx="16" cy="16" r="16" fill="#3D4A35"/>
-
-  <!-- Pétalo central -->
-  <path d="M16 7 C16 7 13.2 11 13.2 14.8 C13.2 17 14.4 18.6 16 19.2 C17.6 18.6 18.8 17 18.8 14.8 C18.8 11 16 7 16 7Z" stroke="#D4AF7A" stroke-width="0.9" fill="none" stroke-linecap="round"/>
-
-  <!-- Pétalo izquierdo interior -->
-  <path d="M16 9 C16 9 10.5 11.5 10.5 16 C10.5 18.5 13 20.2 15.2 19.2" stroke="#D4AF7A" stroke-width="0.9" fill="none" stroke-linecap="round"/>
-
-  <!-- Pétalo derecho interior -->
-  <path d="M16 9 C16 9 21.5 11.5 21.5 16 C21.5 18.5 19 20.2 16.8 19.2" stroke="#D4AF7A" stroke-width="0.9" fill="none" stroke-linecap="round"/>
-
-  <!-- Pétalo izquierdo exterior -->
-  <path d="M16 11 C16 11 8 13 8 19 C8 21.5 11 23.5 14.5 21" stroke="#D4AF7A" stroke-width="0.8" fill="none" stroke-linecap="round"/>
-
-  <!-- Pétalo derecho exterior -->
-  <path d="M16 11 C16 11 24 13 24 19 C24 21.5 21 23.5 17.5 21" stroke="#D4AF7A" stroke-width="0.8" fill="none" stroke-linecap="round"/>
-
-  <!-- Base curva -->
-  <path d="M9 23.5 Q16 27 23 23.5" stroke="#D4AF7A" stroke-width="0.9" fill="none" stroke-linecap="round"/>
-
-  <!-- Destello superior -->
-  <circle cx="16" cy="5" r="1.2" fill="#D4AF7A"/>
+  <path d="M 21 13 A 11 11 0 1 0 21 27" stroke="#D4AF7A" stroke-width="0.9" fill="none" stroke-linecap="round"/>
+  <path d="M 14 17 C 17 14, 20 10, 21 7" stroke="#A7B499" stroke-width="0.9" fill="none" stroke-linecap="round"/>
+  <ellipse cx="16.5" cy="14" rx="2.8" ry="1.1" transform="rotate(-55 16.5 14)" fill="#A7B499"/>
+  <ellipse cx="19" cy="13" rx="2.8" ry="1.1" transform="rotate(-20 19 13)" fill="#A7B499"/>
+  <ellipse cx="19.5" cy="9.5" rx="2.4" ry="1" transform="rotate(-50 19.5 9.5)" fill="#A7B499"/>
+  <ellipse cx="22" cy="8.5" rx="2.4" ry="1" transform="rotate(-15 22 8.5)" fill="#A7B499"/>
+  <ellipse cx="13.5" cy="26.5" rx="7" ry="2.8" fill="#c4b28c"/>
+  <ellipse cx="13.5" cy="25.5" rx="6.5" ry="2" fill="#ddd0b0"/>
+  <ellipse cx="13.5" cy="22" rx="5.2" ry="2.3" fill="#c4b28c"/>
+  <ellipse cx="13.5" cy="21" rx="4.8" ry="1.7" fill="#ddd0b0"/>
+  <ellipse cx="13" cy="17.8" rx="3.6" ry="1.9" fill="#c4b28c"/>
+  <ellipse cx="13" cy="17" rx="3.2" ry="1.4" fill="#ddd0b0"/>
+  <path d="M 6 28.5 Q 10 27, 13.5 28.5 Q 17 30, 21 28.5" stroke="#D4AF7A" stroke-width="0.7" fill="none" stroke-linecap="round"/>
 </svg>

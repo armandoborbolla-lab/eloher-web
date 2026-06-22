@@ -10,7 +10,7 @@ export default function Footer() {
             className="text-4xl text-white"
             style={{ fontFamily: "var(--font-great-vibes), cursive" }}
           >
-            EloHer
+            eloher
           </span>
           <span
             className="text-[9px] tracking-[0.4em] uppercase text-gold"

@@ -10,24 +10,25 @@ const links = [
   { href: "/#opiniones", label: "Opiniones" },
 ];
 
-/* Isotipo loto EloHer */
+/* Isotipo oficial EloHer */
 function LotusNav() {
   return (
-    <svg width="32" height="36" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Destello superior */}
-      <path d="M16 1 L16.6 3 L18 2 L16.8 3.8 L18.5 4.5 L16.6 4.5 L17 6.5 L16 5 L15 6.5 L15.4 4.5 L13.5 4.5 L15.2 3.8 L14 2 L15.4 3Z" fill="#D4AF7A" opacity="0.9"/>
-      {/* Pétalo central */}
-      <path d="M16 9 C16 9 12 13 12 17.5 C12 20.5 13.8 22.5 16 23.5 C18.2 22.5 20 20.5 20 17.5 C20 13 16 9 16 9Z" stroke="#D4AF7A" strokeWidth="0.8" fill="none"/>
-      {/* Pétalos laterales internos */}
-      <path d="M16 9 C16 9 9 12 9 18 C9 21 11.5 23 14 23.5" stroke="#D4AF7A" strokeWidth="0.8" fill="none"/>
-      <path d="M16 9 C16 9 23 12 23 18 C23 21 20.5 23 18 23.5" stroke="#D4AF7A" strokeWidth="0.8" fill="none"/>
-      {/* Pétalos externos */}
-      <path d="M16 11 C16 11 5 14 5 21 C5 24.5 9 27 13 24" stroke="#D4AF7A" strokeWidth="0.8" fill="none"/>
-      <path d="M16 11 C16 11 27 14 27 21 C27 24.5 23 27 19 24" stroke="#D4AF7A" strokeWidth="0.8" fill="none"/>
-      {/* Base curva */}
-      <path d="M8 26 Q16 30 24 26" stroke="#D4AF7A" strokeWidth="0.8" fill="none"/>
-      {/* Punto esencia */}
-      <circle cx="16" cy="17.5" r="1" fill="#D4AF7A" opacity="0.6"/>
+    <svg width="30" height="35" viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M 56 50 A 32 32 0 1 0 56 106" stroke="#D4AF7A" strokeWidth="2" fill="none" strokeLinecap="round"/>
+      <path d="M 45 70 C 54 57, 65 40, 72 22" stroke="#A7B499" strokeWidth="1.8" fill="none" strokeLinecap="round"/>
+      <ellipse cx="50" cy="62" rx="6" ry="2.2" transform="rotate(-55 50 62)" fill="#A7B499"/>
+      <ellipse cx="57" cy="60" rx="6" ry="2.2" transform="rotate(-20 57 60)" fill="#A7B499"/>
+      <ellipse cx="60" cy="47" rx="5.5" ry="2" transform="rotate(-50 60 47)" fill="#A7B499"/>
+      <ellipse cx="67" cy="45" rx="5.5" ry="2" transform="rotate(-15 67 45)" fill="#A7B499"/>
+      <ellipse cx="68" cy="33" rx="5" ry="1.9" transform="rotate(-48 68 33)" fill="#A7B499"/>
+      <ellipse cx="74" cy="31" rx="5" ry="1.9" transform="rotate(-12 74 31)" fill="#A7B499"/>
+      <ellipse cx="40" cy="95" rx="22" ry="8" fill="#c4b28c"/>
+      <ellipse cx="40" cy="93.5" rx="21" ry="6" fill="#ddd0b0"/>
+      <ellipse cx="40" cy="82" rx="16" ry="6.5" fill="#c4b28c"/>
+      <ellipse cx="40" cy="80.5" rx="15" ry="5" fill="#ddd0b0"/>
+      <ellipse cx="39" cy="71" rx="11" ry="5" fill="#c4b28c"/>
+      <ellipse cx="39" cy="69.5" rx="10" ry="3.8" fill="#ddd0b0"/>
+      <path d="M 14 103 Q 27 99.5, 40 103 Q 53 106.5, 66 103" stroke="#D4AF7A" strokeWidth="1.8" fill="none" strokeLinecap="round"/>
     </svg>
   );
 }
@@ -47,7 +48,7 @@ export default function Navbar() {
               className="text-2xl md:text-3xl text-white leading-none"
               style={{ fontFamily: "var(--font-great-vibes), cursive" }}
             >
-              EloHer
+              eloher
             </span>
             <span
               className="text-[8px] tracking-[0.3em] uppercase text-gold mt-0.5"

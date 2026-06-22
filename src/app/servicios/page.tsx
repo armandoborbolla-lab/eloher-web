@@ -118,11 +118,20 @@ const categories = [
 /* Isotipo pequeño para decoración */
 function LotusSmall() {
   return (
-    <svg width="20" height="22" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16 9 C16 9 12 13 12 17.5 C12 20.5 13.8 22.5 16 23.5 C18.2 22.5 20 20.5 20 17.5 C20 13 16 9 16 9Z" stroke="#D4AF7A" strokeWidth="1" fill="none"/>
-      <path d="M16 9 C16 9 9 12 9 18 C9 21 11.5 23 14 23.5" stroke="#D4AF7A" strokeWidth="1" fill="none"/>
-      <path d="M16 9 C16 9 23 12 23 18 C23 21 20.5 23 18 23.5" stroke="#D4AF7A" strokeWidth="1" fill="none"/>
-      <path d="M8 26 Q16 30 24 26" stroke="#D4AF7A" strokeWidth="1" fill="none"/>
+    <svg width="20" height="23" viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M 56 50 A 32 32 0 1 0 56 106" stroke="#D4AF7A" strokeWidth="2" fill="none" strokeLinecap="round"/>
+      <path d="M 45 70 C 54 57, 65 40, 72 22" stroke="#A7B499" strokeWidth="1.8" fill="none" strokeLinecap="round"/>
+      <ellipse cx="50" cy="62" rx="6" ry="2.2" transform="rotate(-55 50 62)" fill="#A7B499"/>
+      <ellipse cx="57" cy="60" rx="6" ry="2.2" transform="rotate(-20 57 60)" fill="#A7B499"/>
+      <ellipse cx="60" cy="47" rx="5.5" ry="2" transform="rotate(-50 60 47)" fill="#A7B499"/>
+      <ellipse cx="67" cy="45" rx="5.5" ry="2" transform="rotate(-15 67 45)" fill="#A7B499"/>
+      <ellipse cx="40" cy="95" rx="22" ry="8" fill="#c4b28c"/>
+      <ellipse cx="40" cy="93.5" rx="21" ry="6" fill="#ddd0b0"/>
+      <ellipse cx="40" cy="82" rx="16" ry="6.5" fill="#c4b28c"/>
+      <ellipse cx="40" cy="80.5" rx="15" ry="5" fill="#ddd0b0"/>
+      <ellipse cx="39" cy="71" rx="11" ry="5" fill="#c4b28c"/>
+      <ellipse cx="39" cy="69.5" rx="10" ry="3.8" fill="#ddd0b0"/>
+      <path d="M 14 103 Q 27 99.5, 40 103 Q 53 106.5, 66 103" stroke="#D4AF7A" strokeWidth="1.8" fill="none" strokeLinecap="round"/>
     </svg>
   );
 }
