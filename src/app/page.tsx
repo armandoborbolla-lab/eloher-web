@@ -132,7 +132,7 @@ const faqs = [
   },
   {
     q: "¿Aceptan tarjetas de crédito o débito?",
-    a: "Sí, aceptamos tarjeta de crédito y débito, efectivo, transferencia bancaria y ligas de pago — sin comisiones adicionales. También podemos enviarte una liga de pago por WhatsApp antes de tu visita para que llegues sin pendientes y disfrutes desde el primer minuto.",
+    a: "Sí, aceptamos tarjeta de crédito y débito, efectivo y transferencia bancaria — sin comisiones adicionales. También podemos enviarte una liga de pago por WhatsApp antes de tu visita para que llegues sin pendientes y disfrutes desde el primer minuto.",
   },
   {
     q: "¿Tienen estacionamiento?",
