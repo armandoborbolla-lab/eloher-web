@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const links = [
   { href: "/servicios", label: "Servicios" },
@@ -41,9 +42,24 @@ function LotusNav() {
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const solid = scrolled || !isHome;
 
   return (
-    <header className="w-full bg-olive/95 backdrop-blur-sm sticky top-0 z-50">
+    <header
+      className={`w-full sticky top-0 z-50 transition-colors duration-300 ${
+        solid ? "bg-olive/95 backdrop-blur-sm shadow-sm" : "bg-transparent"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
 
         {/* Logo */}

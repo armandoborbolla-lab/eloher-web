@@ -167,27 +167,31 @@ export default function ServiciosPage() {
           <div className="h-px w-10 bg-gold/40" />
         </div>
         <p
-          className="text-white/65 text-sm max-w-xl mx-auto mb-10"
+          className="text-white/65 text-sm max-w-xl mx-auto"
           style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
         >
           Cada tratamiento en EloHer está diseñado para ser una experiencia única.
           Elige el que más te llame y déjate cuidar.
         </p>
+      </section>
 
-        {/* Quick nav */}
-        <div className="flex flex-wrap justify-center gap-3">
+      {/* ── Sticky category nav ── */}
+      <nav
+        className="sticky top-16 md:top-20 z-40 bg-warm-white/95 backdrop-blur-sm border-b border-sage/20 py-3 px-6"
+      >
+        <div className="max-w-5xl mx-auto flex flex-wrap justify-center gap-3">
           {categories.map((cat) => (
             <a
               key={cat.id}
               href={`#${cat.id}`}
-              className="px-5 py-2 border border-white/30 text-white/70 text-[10px] tracking-[0.2em] uppercase rounded-full hover:bg-white/10 hover:text-white transition-colors duration-200"
+              className="px-5 py-1.5 text-[10px] tracking-[0.2em] uppercase rounded-full border border-olive/25 text-olive/65 hover:bg-olive hover:text-white hover:border-olive transition-all duration-200"
               style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
             >
               {cat.label}
             </a>
           ))}
         </div>
-      </section>
+      </nav>
 
       {/* ── Categorías ── */}
       <div>
@@ -195,7 +199,7 @@ export default function ServiciosPage() {
           <section
             key={cat.id}
             id={cat.id}
-            className={`py-20 px-6 ${idx % 2 === 0 ? "bg-warm-white" : "bg-beige"}`}
+            className={`py-20 px-6 scroll-mt-32 ${idx % 2 === 0 ? "bg-warm-white" : "bg-beige"}`}
           >
             <div className="max-w-5xl mx-auto">
               {/* Encabezado de categoría */}
@@ -229,7 +233,7 @@ export default function ServiciosPage() {
                 {cat.services.map((svc) => (
                   <div
                     key={svc.name}
-                    className="bg-white p-6 flex flex-col gap-3 border-t-2 border-sage/30 hover:border-gold transition-colors duration-300 hover:shadow-sm relative"
+                    className="bg-white p-6 flex flex-col gap-3 border-t-2 border-sage/30 hover:border-gold transition-all duration-300 hover:shadow-md hover:-translate-y-1 relative"
                   >
                     {/* Badge */}
                     {svc.tag && (
