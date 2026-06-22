@@ -118,20 +118,17 @@ const categories = [
 /* Isotipo pequeño para decoración */
 function LotusSmall() {
   return (
-    <svg width="20" height="23" viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M 56 50 A 32 32 0 1 0 56 106" stroke="#D4AF7A" strokeWidth="2" fill="none" strokeLinecap="round"/>
-      <path d="M 45 70 C 54 57, 65 40, 72 22" stroke="#A7B499" strokeWidth="1.8" fill="none" strokeLinecap="round"/>
-      <ellipse cx="50" cy="62" rx="6" ry="2.2" transform="rotate(-55 50 62)" fill="#A7B499"/>
-      <ellipse cx="57" cy="60" rx="6" ry="2.2" transform="rotate(-20 57 60)" fill="#A7B499"/>
-      <ellipse cx="60" cy="47" rx="5.5" ry="2" transform="rotate(-50 60 47)" fill="#A7B499"/>
-      <ellipse cx="67" cy="45" rx="5.5" ry="2" transform="rotate(-15 67 45)" fill="#A7B499"/>
-      <ellipse cx="40" cy="95" rx="22" ry="8" fill="#c4b28c"/>
-      <ellipse cx="40" cy="93.5" rx="21" ry="6" fill="#ddd0b0"/>
-      <ellipse cx="40" cy="82" rx="16" ry="6.5" fill="#c4b28c"/>
-      <ellipse cx="40" cy="80.5" rx="15" ry="5" fill="#ddd0b0"/>
-      <ellipse cx="39" cy="71" rx="11" ry="5" fill="#c4b28c"/>
-      <ellipse cx="39" cy="69.5" rx="10" ry="3.8" fill="#ddd0b0"/>
-      <path d="M 14 103 Q 27 99.5, 40 103 Q 53 106.5, 66 103" stroke="#D4AF7A" strokeWidth="1.8" fill="none" strokeLinecap="round"/>
+    <svg width="22" height="22" viewBox="80 100 360 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M125 335 A170 170 0 0 1 375 125" stroke="#D4A65F" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round"/>
+      <ellipse cx="230" cy="205" rx="32" ry="20" fill="#E8DDD0"/>
+      <ellipse cx="230" cy="265" rx="58" ry="32" fill="#D8CCBE"/>
+      <ellipse cx="230" cy="340" rx="86" ry="44" fill="#B7B49F"/>
+      <path d="M330 170 C355 230 352 305 310 375" stroke="#A5AD98" strokeWidth="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <ellipse cx="342" cy="195" rx="18" ry="45" transform="rotate(-30 342 195)" fill="#A5AD98"/>
+      <ellipse cx="370" cy="250" rx="18" ry="45" transform="rotate(25 370 250)" fill="#A5AD98"/>
+      <ellipse cx="350" cy="315" rx="18" ry="45" transform="rotate(-28 350 315)" fill="#A5AD98"/>
+      <ellipse cx="305" cy="360" rx="18" ry="42" transform="rotate(35 305 360)" fill="#A5AD98"/>
+      <path d="M140 390 C205 365 270 365 340 390" stroke="#A5AD98" strokeWidth="12" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   );
 }
