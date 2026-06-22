@@ -134,13 +134,24 @@ export default function HomePage() {
       {/* ═══ HERO ═══ */}
       <section
         className="relative min-h-screen flex items-center justify-center overflow-hidden -mt-20"
-        style={{ background: "linear-gradient(160deg, #2e3928 0%, #3D4A35 50%, #4e5f44 100%)" }}
       >
+        {/* Foto de fondo */}
+        <Image
+          src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=85&w=1920&fit=crop"
+          alt="EloHer Spa"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Overlay olive suave — deja respirar la foto */}
         <div
           className="absolute inset-0"
-          style={{
-            backgroundImage: "radial-gradient(ellipse at 50% 40%, rgba(212,175,122,0.08) 0%, transparent 60%)",
-          }}
+          style={{ background: "linear-gradient(160deg, rgba(36,46,30,0.80) 0%, rgba(55,68,45,0.70) 60%, rgba(46,57,40,0.75) 100%)" }}
+        />
+        {/* Toque dorado muy sutil en el centro */}
+        <div
+          className="absolute inset-0"
+          style={{ backgroundImage: "radial-gradient(ellipse at 50% 40%, rgba(212,175,122,0.07) 0%, transparent 60%)" }}
         />
         <div className="relative z-10 text-center px-6 max-w-2xl mx-auto pt-20">
           <div className="flex justify-center mb-4">
