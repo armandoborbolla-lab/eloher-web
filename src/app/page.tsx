@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import FadeIn from "@/components/FadeIn";
 
@@ -6,9 +7,8 @@ export const metadata: Metadata = {
   title: "EloHer Beauty & Wellness Spa",
 };
 
-/* Isotipo oficial EloHer */
+/* ── Isotipo oficial EloHer ── */
 function LotusIcon({ size = 64 }: { size?: number }) {
-  /* Hoja teardrop: base en origen, punta hacia arriba */
   const hL = "M 0 0 C -5 -8, -7 -22, 0 -38 C 7 -22, 5 -8, 0 0 Z";
   const hM = "M 0 0 C -4 -7, -6 -18, 0 -32 C 6 -18, 4 -7, 0 0 Z";
   const hS = "M 0 0 C -3 -5, -5 -14, 0 -25 C 5 -14, 3 -5, 0 0 Z";
@@ -36,34 +36,75 @@ function LotusIcon({ size = 64 }: { size?: number }) {
   );
 }
 
+/* ── Íconos para los pilares ── */
+function PillarIcon({ type }: { type: "heart" | "shield" | "leaf" | "sparkle" }) {
+  const base = {
+    width: 30,
+    height: 30,
+    viewBox: "0 0 24 24",
+    fill: "none" as const,
+    stroke: "#D4A65F",
+    strokeWidth: 1.5,
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+  };
+  if (type === "heart") return (
+    <svg {...base}>
+      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+    </svg>
+  );
+  if (type === "shield") return (
+    <svg {...base}>
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      <polyline points="9,12 11,14 15,10"/>
+    </svg>
+  );
+  if (type === "leaf") return (
+    <svg {...base}>
+      <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/>
+      <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+    </svg>
+  );
+  return (
+    <svg {...base}>
+      <path d="M12 2l2.309 7.691L22 12l-7.691 2.309L12 22l-2.309-7.691L2 12l7.691-2.309z"/>
+    </svg>
+  );
+}
+
+/* ── Datos ── */
 const featuredServices = [
   {
-    name: "Cuidado Facial",
-    description: "Tratamientos personalizados que realzan tu belleza natural con técnicas y productos premium.",
+    num: "01",
+    name: "Faciales & Skincare",
+    description: "Limpiezas profundas, hidratación y tratamientos personalizados para una piel luminosa y saludable.",
     href: "/servicios#faciales",
+    image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=900&h=600&fit=crop",
+    tags: ["Limpieza facial", "Hidratación", "Antiedad"],
   },
   {
-    name: "Masajes & Bienestar",
-    description: "Desde masaje sueco hasta rituales con piedras calientes. Libera tensiones y recupera tu energía.",
+    num: "02",
+    name: "Masajes & Relajación",
+    description: "Terapias para liberar tensión, reconectar cuerpo y mente, y devolverte la calma profunda.",
     href: "/servicios#masajes",
+    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=900&h=600&fit=crop",
+    tags: ["Relajante", "Descontracturante", "Aromaterapia"],
   },
   {
-    name: "Rituales Corporales",
-    description: "Exfoliaciones, envolturas y aromaterapia para una piel renovada y una mente en paz.",
+    num: "03",
+    name: "Tratamientos Corporales",
+    description: "Exfoliaciones, envolturas y rituales que cuidan tu piel de pies a cabeza con resultados visibles.",
     href: "/servicios#corporales",
-  },
-  {
-    name: "Manos y Pies",
-    description: "Manicure y pedicure spa con hidratación profunda. Resultados que se ven y se sienten.",
-    href: "/servicios#manos-pies",
+    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=900&h=600&fit=crop",
+    tags: ["Exfoliación", "Envolturas", "Reafirmante"],
   },
 ];
 
-const pillars = [
-  { title: "Cálida y Cercana", desc: "Te recibimos como en casa, con atención personalizada desde el primer momento." },
-  { title: "Profesional y Confiable", desc: "Terapeutas certificadas con años de experiencia en bienestar y belleza." },
-  { title: "Natural y Consciente", desc: "Productos premium sin parabenos, formulados con activos naturales." },
-  { title: "Elegante y Femenina", desc: "Un espacio diseñado pensando en ti, en cada detalle." },
+const pillars: { title: string; desc: string; icon: "heart" | "shield" | "leaf" | "sparkle" }[] = [
+  { title: "Cálida y Cercana", desc: "Te recibimos como en casa, con atención personalizada desde el primer momento.", icon: "heart" },
+  { title: "Profesional y Confiable", desc: "Terapeutas certificadas con años de experiencia en bienestar y belleza.", icon: "shield" },
+  { title: "Natural y Consciente", desc: "Productos premium sin parabenos, formulados con activos naturales.", icon: "leaf" },
+  { title: "Elegante y Femenina", desc: "Un espacio diseñado pensando en ti, en cada detalle.", icon: "sparkle" },
 ];
 
 export default function HomePage() {
@@ -77,43 +118,36 @@ export default function HomePage() {
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage:
-              "radial-gradient(ellipse at 50% 40%, rgba(212,175,122,0.08) 0%, transparent 60%)",
+            backgroundImage: "radial-gradient(ellipse at 50% 40%, rgba(212,175,122,0.08) 0%, transparent 60%)",
           }}
         />
-
         <div className="relative z-10 text-center px-6 max-w-2xl mx-auto pt-20">
           <div className="flex justify-center mb-4">
             <LotusIcon size={72} />
           </div>
-
           <h1
             className="text-8xl md:text-[7rem] text-white leading-none mb-2"
             style={{ fontFamily: "var(--font-great-vibes), cursive" }}
           >
             eloher
           </h1>
-
           <p
             className="text-[11px] tracking-[0.55em] uppercase text-gold mb-2"
             style={{ fontFamily: "var(--font-montserrat), sans-serif", fontWeight: 300 }}
           >
             Beauty &amp; Wellness Spa
           </p>
-
           <div className="flex items-center gap-3 justify-center my-5">
             <div className="h-px w-10 bg-gold/50" />
             <div className="w-1 h-1 rounded-full bg-gold" />
             <div className="h-px w-10 bg-gold/50" />
           </div>
-
           <p
             className="text-xl md:text-2xl text-white/85 italic mb-12"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 300 }}
           >
             Confianza, belleza y equilibrio en tu piel.
           </p>
-
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="https://wa.me/521234567890"
@@ -132,18 +166,13 @@ export default function HomePage() {
               Ver Servicios
             </Link>
           </div>
-
           <div className="mt-16 flex flex-col items-center gap-2 opacity-50">
-            <p
-              className="text-[9px] tracking-[0.5em] uppercase text-white"
-              style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
-            >
+            <p className="text-[9px] tracking-[0.5em] uppercase text-white" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
               Descubre
             </p>
             <div className="w-px h-8 bg-white/50" />
           </div>
         </div>
-
         <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-warm-white to-transparent" />
       </section>
 
@@ -151,16 +180,10 @@ export default function HomePage() {
       <section className="py-24 px-6 bg-warm-white">
         <FadeIn>
           <div className="max-w-3xl mx-auto text-center">
-            <p
-              className="text-[10px] tracking-[0.45em] uppercase text-gold mb-4"
-              style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
-            >
+            <p className="text-[10px] tracking-[0.45em] uppercase text-gold mb-4" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
               Nuestra Filosofía
             </p>
-            <h2
-              className="text-4xl md:text-5xl text-olive mb-5"
-              style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 400 }}
-            >
+            <h2 className="text-4xl md:text-5xl text-olive mb-5" style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 400 }}>
               El arte de cuidarte
             </h2>
             <div className="flex items-center gap-3 justify-center mb-7">
@@ -180,47 +203,76 @@ export default function HomePage() {
 
       {/* ═══ SERVICIOS ═══ */}
       <section className="py-24 px-6 bg-beige" id="servicios">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <FadeIn>
             <div className="text-center mb-14">
-              <p
-                className="text-[10px] tracking-[0.45em] uppercase text-gold mb-4"
-                style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
-              >
+              <p className="text-[10px] tracking-[0.45em] uppercase text-gold mb-4" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
                 Lo que ofrecemos
               </p>
-              <h2
-                className="text-4xl md:text-5xl text-olive"
-                style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 400 }}
-              >
+              <h2 className="text-4xl md:text-5xl text-olive" style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 400 }}>
                 Nuestros Tratamientos
               </h2>
             </div>
           </FadeIn>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
             {featuredServices.map((svc, i) => (
-              <FadeIn key={svc.name} delay={i * 120}>
+              <FadeIn key={svc.name} delay={i * 150}>
                 <Link
                   href={svc.href}
-                  className="group bg-warm-white p-7 flex flex-col gap-4 border-b-2 border-sage/30 hover:border-gold transition-all duration-300 hover:shadow-md hover:-translate-y-1"
+                  className="group block rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5"
                 >
-                  <div className="flex justify-start">
-                    <LotusIcon size={36} />
+                  {/* Foto */}
+                  <div className="relative h-60 overflow-hidden">
+                    <Image
+                      src={svc.image}
+                      alt={svc.name}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-700"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                    {/* Badge número */}
+                    <div
+                      className="absolute top-4 left-4 w-9 h-9 rounded-full flex items-center justify-center"
+                      style={{ background: "rgba(46,57,40,0.85)" }}
+                    >
+                      <span className="text-[11px] text-white tracking-wider" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
+                        {svc.num}
+                      </span>
+                    </div>
                   </div>
-                  <h3
-                    className="text-xl text-olive"
-                    style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 500 }}
-                  >
-                    {svc.name}
-                  </h3>
-                  <p className="text-sm text-taupe leading-relaxed flex-1">{svc.description}</p>
-                  <span
-                    className="text-[10px] tracking-widest uppercase text-gold group-hover:text-olive transition-colors"
-                    style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
-                  >
-                    Ver más →
-                  </span>
+
+                  {/* Contenido */}
+                  <div className="bg-warm-white p-6">
+                    <h3
+                      className="text-2xl text-olive mb-3"
+                      style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 500 }}
+                    >
+                      {svc.name}
+                    </h3>
+                    <p className="text-sm text-taupe leading-relaxed mb-4" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
+                      {svc.description}
+                    </p>
+                    {/* Tags */}
+                    <div className="flex flex-wrap gap-2 mb-5">
+                      {svc.tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="px-3 py-1 bg-beige rounded-full text-[9px] tracking-[0.15em] uppercase text-taupe"
+                          style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    {/* CTA */}
+                    <span
+                      className="flex items-center gap-2 text-[11px] tracking-[0.2em] uppercase text-olive font-medium group-hover:text-gold transition-colors duration-300"
+                      style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
+                    >
+                      Agenda este <span className="group-hover:translate-x-1 transition-transform duration-300 inline-block">→</span>
+                    </span>
+                  </div>
                 </Link>
               </FadeIn>
             ))}
@@ -286,31 +338,30 @@ export default function HomePage() {
 
       {/* ═══ PILARES ═══ */}
       <section className="py-24 px-6 bg-warm-white" id="espacio">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <FadeIn>
-            <div className="text-center mb-14">
-              <p
-                className="text-[10px] tracking-[0.45em] uppercase text-gold mb-4"
-                style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
-              >
-                La experiencia EloHer
-              </p>
-              <h2
-                className="text-4xl md:text-5xl text-olive"
-                style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 400 }}
-              >
+            <div className="text-center mb-16">
+              <div className="flex items-center gap-4 justify-center mb-4">
+                <div className="h-px w-10 bg-gold/40" />
+                <p className="text-[10px] tracking-[0.45em] uppercase text-gold" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
+                  La experiencia EloHer
+                </p>
+                <div className="h-px w-10 bg-gold/40" />
+              </div>
+              <h2 className="text-4xl md:text-5xl text-olive" style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 400 }}>
                 ¿Por qué elegirnos?
               </h2>
             </div>
           </FadeIn>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
             {pillars.map((p, i) => (
               <FadeIn key={p.title} delay={i * 100}>
-                <div className="text-center px-4">
-                  <div className="flex justify-center mb-4">
-                    <div className="w-14 h-14 rounded-full bg-beige flex items-center justify-center">
-                      <LotusIcon size={30} />
+                <div className="text-center">
+                  {/* Ícono único por pilar */}
+                  <div className="flex justify-center mb-5">
+                    <div className="w-16 h-16 rounded-full bg-beige flex items-center justify-center">
+                      <PillarIcon type={p.icon} />
                     </div>
                   </div>
                   <h3
@@ -319,7 +370,9 @@ export default function HomePage() {
                   >
                     {p.title}
                   </h3>
-                  <p className="text-sm text-taupe leading-relaxed">{p.desc}</p>
+                  <p className="text-sm text-taupe leading-relaxed" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
+                    {p.desc}
+                  </p>
                 </div>
               </FadeIn>
             ))}
@@ -333,19 +386,13 @@ export default function HomePage() {
         style={{ background: "linear-gradient(160deg, #2e3928 0%, #3D4A35 100%)" }}
       >
         <FadeIn>
-          <p
-            className="text-[10px] tracking-[0.5em] uppercase text-gold mb-4"
-            style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
-          >
+          <p className="text-[10px] tracking-[0.5em] uppercase text-gold mb-4" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
             Comienza hoy
           </p>
-          <h2
-            className="text-4xl md:text-5xl text-white italic mb-6"
-            style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 300 }}
-          >
+          <h2 className="text-4xl md:text-5xl text-white italic mb-6" style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 300 }}>
             Regálate un momento de bienestar
           </h2>
-          <p className="text-white/65 text-sm mb-10 max-w-md mx-auto">
+          <p className="text-white/65 text-sm mb-10 max-w-md mx-auto" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
             Agenda tu cita por WhatsApp o escríbenos. Estamos listas para recibirte.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
