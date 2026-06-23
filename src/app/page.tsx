@@ -162,12 +162,7 @@ export default function HomePage() {
           <div className="flex justify-center mb-4">
             <Image src="/isotipo.png" alt="EloHer" width={220} height={220} className="object-contain" />
           </div>
-          <h1
-            className="text-8xl md:text-[7rem] text-white leading-none mb-2"
-            style={{ fontFamily: "var(--font-great-vibes), cursive" }}
-          >
-            eloher
-          </h1>
+          <Image src="/logo-eloher.png" alt="eloher" width={380} height={100} className="object-contain mb-2" />
           <p
             className="text-[11px] tracking-[0.55em] uppercase text-gold mb-2"
             style={{ fontFamily: "var(--font-montserrat), sans-serif", fontWeight: 300 }}

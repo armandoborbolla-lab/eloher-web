@@ -39,12 +39,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <Image src="/isotipo.png" alt="EloHer" width={52} height={52} className="object-contain" />
           <div className="flex flex-col leading-none">
-            <span
-              className="text-2xl md:text-3xl text-white leading-none"
-              style={{ fontFamily: "var(--font-great-vibes), cursive" }}
-            >
-              eloher
-            </span>
+            <Image src="/logo-eloher.png" alt="eloher" width={110} height={36} className="object-contain" />
             <span
               className="text-[8px] tracking-[0.3em] uppercase text-gold mt-0.5"
               style={{ fontFamily: "var(--font-montserrat), sans-serif", fontWeight: 300 }}
