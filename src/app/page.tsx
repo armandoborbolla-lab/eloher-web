@@ -159,10 +159,10 @@ export default function HomePage() {
           style={{ backgroundImage: "radial-gradient(ellipse at 50% 40%, rgba(212,175,122,0.07) 0%, transparent 60%)" }}
         />
         <div className="relative z-10 text-center px-6 max-w-2xl mx-auto pt-20">
-          <div className="flex justify-center mb-4">
-            <Image src="/isotipo.png" alt="EloHer" width={220} height={220} className="object-contain" />
+          <div className="flex justify-center -mb-4">
+            <Image src="/isotipo.png" alt="EloHer" width={180} height={180} className="object-contain" />
           </div>
-          <Image src="/logo-eloher.png" alt="eloher" width={380} height={100} className="object-contain mb-2" />
+          <Image src="/logo-eloher.png" alt="eloher" width={360} height={95} className="object-contain mb-2" />
           <p
             className="text-[11px] tracking-[0.55em] uppercase text-gold mb-2"
             style={{ fontFamily: "var(--font-montserrat), sans-serif", fontWeight: 300 }}
