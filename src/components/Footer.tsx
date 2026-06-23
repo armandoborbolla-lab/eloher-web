@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -6,18 +7,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Brand */}
         <div className="flex flex-col gap-3">
-          <span
-            className="text-4xl text-white"
-            style={{ fontFamily: "var(--font-great-vibes), cursive" }}
-          >
-            eloher
-          </span>
-          <span
-            className="text-[9px] tracking-[0.4em] uppercase text-gold"
-            style={{ fontFamily: "var(--font-montserrat), sans-serif", fontWeight: 300 }}
-          >
-            Beauty &amp; Wellness Spa
-          </span>
+          <Image src="/logo-horizontal.png" alt="EloHer" width={160} height={52} className="object-contain" />
           <div className="h-px w-10 bg-gold/30 my-1" />
           <p className="text-sm leading-relaxed text-white/55 max-w-xs">
             Un refugio de paz y renovación donde cada visita transforma tu cuerpo, mente y espíritu.
