@@ -82,7 +82,7 @@ const jsonLd = {
   "@type": "BeautySalon",
   name: "EloHer Beauty & Wellness Spa",
   url: "https://eloher.com.mx",
-  logo: "https://eloher.com.mx/logo.png",
+  logo: "https://eloher.com.mx/logo-horizontal.png",
   image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=1200&fit=crop",
   description: "Spa boutique en Real Cumbres, Monterrey. Faciales, masajes, tratamientos corporales y bienestar integral.",
   address: {
@@ -106,7 +106,7 @@ const jsonLd = {
   priceRange: "$$",
   areaServed: { "@type": "City", name: "Monterrey" },
   hasMap: "https://maps.google.com/?q=Real+de+Cumbres+458,+Real+Cumbres,+64346+Monterrey,+N.L.",
-  sameAs: ["https://eloher.com.mx"],
+  sameAs: ["https://eloher.com.mx", "https://www.instagram.com/eloher.spa"],
 };
 
 export default function RootLayout({
