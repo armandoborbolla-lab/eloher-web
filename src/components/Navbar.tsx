@@ -37,7 +37,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <Image src="/isotipo.png" alt="EloHer" width={36} height={36} className="object-contain" />
+          <Image src="/isotipo.png" alt="EloHer" width={52} height={52} className="object-contain" />
           <div className="flex flex-col leading-none">
             <span
               className="text-2xl md:text-3xl text-white leading-none"

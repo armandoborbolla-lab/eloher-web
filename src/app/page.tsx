@@ -160,7 +160,7 @@ export default function HomePage() {
         />
         <div className="relative z-10 text-center px-6 max-w-2xl mx-auto pt-20">
           <div className="flex justify-center mb-4">
-            <Image src="/isotipo.png" alt="EloHer" width={130} height={130} className="object-contain" />
+            <Image src="/isotipo.png" alt="EloHer" width={220} height={220} className="object-contain" />
           </div>
           <h1
             className="text-8xl md:text-[7rem] text-white leading-none mb-2"
@@ -350,7 +350,7 @@ export default function HomePage() {
         <FadeIn>
           <div className="max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-6">
-              <Image src="/isotipo.png" alt="EloHer" width={52} height={52} className="object-contain" />
+              <Image src="/isotipo.png" alt="EloHer" width={90} height={90} className="object-contain" />
             </div>
             <blockquote
               className="text-3xl md:text-4xl text-white italic leading-relaxed mb-6"
