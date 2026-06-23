@@ -37,8 +37,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <Image src="/isotipo.png" alt="EloHer" width={52} height={52} className="object-contain" />
-          <Image src="/logo-eloher.png" alt="eloher" width={120} height={38} className="object-contain" />
+          <Image src="/logo-horizontal.png" alt="EloHer Beauty & Wellness Spa" width={160} height={52} className="object-contain" />
         </Link>
 
         {/* Desktop nav */}
