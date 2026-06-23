@@ -1,17 +1,9 @@
 import type { Metadata } from "next";
-import { Great_Vibes, Cormorant_Garamond, Montserrat } from "next/font/google";
+import { Cormorant_Garamond, Montserrat } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
-/* Script elegante para el logotipo "EloHer" */
-const greatVibes = Great_Vibes({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-great-vibes",
-  display: "swap",
-});
 
 /* Serif elegante para títulos de sección */
 const cormorant = Cormorant_Garamond({
@@ -44,15 +36,30 @@ export const metadata: Metadata = {
   keywords: [
     "spa Monterrey",
     "spa Real Cumbres Monterrey",
+    "spa Cumbres Monterrey",
+    "spa boutique Monterrey",
+    "spa boutique Nuevo León",
     "masajes Monterrey",
+    "masaje relajante Monterrey",
+    "masaje aromaterapéutico Monterrey",
+    "masaje de espalda Monterrey",
     "facial Monterrey",
+    "limpieza facial profunda Monterrey",
+    "facial hidratante Monterrey",
+    "tratamiento facial Monterrey",
     "tratamientos corporales Monterrey",
+    "drenaje linfático Monterrey",
+    "tratamiento reductivo Monterrey",
+    "contorno corporal Monterrey",
     "spa relajación Monterrey",
-    "beauty wellness spa",
+    "día de spa Monterrey",
+    "regalo spa Monterrey",
+    "gift card spa Monterrey",
+    "spa para mujer Monterrey",
+    "ritual de bienestar Monterrey",
     "EloHer spa",
     "spa cerca de mí Monterrey",
-    "drenaje linfático Monterrey",
-    "masaje aromaterapéutico Monterrey",
+    "beauty wellness spa",
   ],
   authors: [{ name: "EloHer Beauty & Wellness Spa" }],
   creator: "EloHer Beauty & Wellness Spa",
@@ -115,7 +122,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${greatVibes.variable} ${cormorant.variable} ${montserrat.variable}`}
+      className={`${cormorant.variable} ${montserrat.variable}`}
     >
       <body className="min-h-screen flex flex-col bg-warm-white text-[#2a2a2a]">
         <script
