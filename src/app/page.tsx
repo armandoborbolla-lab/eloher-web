@@ -159,17 +159,8 @@ export default function HomePage() {
           style={{ backgroundImage: "radial-gradient(ellipse at 50% 40%, rgba(212,175,122,0.07) 0%, transparent 60%)" }}
         />
         <div className="relative z-10 text-center px-6 max-w-2xl mx-auto pt-20">
-          <Image src="/logo-principal.png" alt="EloHer Beauty & Wellness Spa" width={380} height={200} className="object-contain mb-2" />
-          <p
-            className="text-[11px] tracking-[0.55em] uppercase text-gold mb-2"
-            style={{ fontFamily: "var(--font-montserrat), sans-serif", fontWeight: 300 }}
-          >
-            Beauty &amp; Wellness Spa
-          </p>
-          <div className="flex items-center gap-3 justify-center my-5">
-            <div className="h-px w-10 bg-gold/50" />
-            <div className="w-1 h-1 rounded-full bg-gold" />
-            <div className="h-px w-10 bg-gold/50" />
+          <div className="flex justify-center mb-6">
+            <Image src="/logo-principal.png" alt="EloHer Beauty & Wellness Spa" width={340} height={220} className="object-contain" />
           </div>
           <p
             className="text-xl md:text-2xl text-white/85 italic mb-12"
