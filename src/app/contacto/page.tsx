@@ -18,7 +18,7 @@ const info = [
     icon: "📍",
     label: "Dirección",
     value: "Real de Cumbres 458, Real Cumbres\n64346 Monterrey, N.L. — 2° Piso",
-    href: "https://maps.google.com/?q=Real+de+Cumbres+458,+Real+Cumbres,+64346+Monterrey,+N.L.",
+    href: "https://maps.google.com/?q=25.754442629859884,-100.40324033567093",
   },
   {
     icon: "📞",
@@ -138,7 +138,7 @@ export default function ContactoPage() {
             {/* Mapa Google Maps */}
             <div className="rounded-xl overflow-hidden border border-sage/20 shadow-sm">
               <iframe
-                src="https://maps.google.com/maps?q=Real+de+Cumbres+458,+Real+Cumbres,+64346+Monterrey,+N.L.&output=embed&z=16"
+                src="https://maps.google.com/maps?q=25.754442629859884,-100.40324033567093&output=embed&z=17"
                 width="100%"
                 height="220"
                 style={{ border: 0 }}

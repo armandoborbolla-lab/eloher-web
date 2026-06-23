@@ -95,8 +95,8 @@ const jsonLd = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 25.7234,
-    longitude: -100.3694,
+    latitude: 25.754442629859884,
+    longitude: -100.40324033567093,
   },
   openingHoursSpecification: [
     { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday"], opens: "08:30", closes: "19:00" },
@@ -105,7 +105,7 @@ const jsonLd = {
   email: "hola@eloher.com.mx",
   priceRange: "$$",
   areaServed: { "@type": "City", name: "Monterrey" },
-  hasMap: "https://maps.google.com/?q=Real+de+Cumbres+458,+Real+Cumbres,+64346+Monterrey,+N.L.",
+  hasMap: "https://maps.google.com/?q=25.754442629859884,-100.40324033567093",
   sameAs: ["https://eloher.com.mx", "https://www.instagram.com/eloher.spa"],
 };
 

@@ -47,7 +47,7 @@ export default function Footer() {
             Contáctanos
           </h3>
           <a
-            href="https://maps.google.com/?q=Real+de+Cumbres+458,+Real+Cumbres,+64346+Monterrey,+N.L."
+            href="https://maps.google.com/?q=25.754442629859884,-100.40324033567093"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-white/55 hover:text-white transition-colors leading-relaxed"
