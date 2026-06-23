@@ -333,7 +333,7 @@ export default function HomePage() {
         <FadeIn>
           <div className="max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-6">
-              <Image src="/isotipo.png" alt="EloHer" width={150} height={150} className="object-contain" />
+              <Image src="/isotipo.png" alt="EloHer" width={280} height={280} className="object-contain" />
             </div>
             <blockquote
               className="text-3xl md:text-4xl text-white italic leading-relaxed mb-6"
