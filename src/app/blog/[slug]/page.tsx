@@ -93,22 +93,23 @@ export default async function PostPage({
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-olive/50" />
-        <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
-          <span className="bg-gold text-white text-[9px] tracking-[0.25em] uppercase px-3 py-1 mb-5">
-            {post.category}
-          </span>
-          <h1
-            className="text-3xl md:text-5xl text-white max-w-2xl leading-tight"
-            style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 300 }}
-          >
-            {post.title}
-          </h1>
-          <div className="flex items-center gap-3 mt-5 text-white/65 text-xs tracking-wider">
-            <span>{formatDate(post.date)}</span>
-            <span>·</span>
-            <span>{post.readTime} de lectura</span>
-          </div>
+      </div>
+
+      {/* Post header */}
+      <div className="bg-beige px-6 py-12 text-center">
+        <span className="inline-block bg-gold text-white text-[9px] tracking-[0.25em] uppercase px-3 py-1 mb-5">
+          {post.category}
+        </span>
+        <h1
+          className="text-3xl md:text-5xl text-olive max-w-2xl mx-auto leading-tight mb-5"
+          style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 300 }}
+        >
+          {post.title}
+        </h1>
+        <div className="flex items-center gap-3 justify-center text-taupe text-xs tracking-wider">
+          <span>{formatDate(post.date)}</span>
+          <span>·</span>
+          <span>{post.readTime} de lectura</span>
         </div>
       </div>
 

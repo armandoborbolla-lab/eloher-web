@@ -36,21 +36,18 @@ export default function BlogPage() {
   return (
     <>
       {/* Header */}
-      <section
-        className="py-24 px-6 text-center"
-        style={{ background: "linear-gradient(135deg, #2d4a38 0%, #4f8260 100%)" }}
-      >
+      <section className="py-24 px-6 text-center bg-beige">
         <p className="text-xs tracking-[0.5em] uppercase text-gold mb-4">
           Conocimiento & Bienestar
         </p>
         <h1
-          className="text-5xl md:text-7xl text-white mb-4"
+          className="text-5xl md:text-7xl text-olive mb-4"
           style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 300 }}
         >
           Blog
         </h1>
         <div className="w-16 h-px bg-gold mx-auto mb-6" />
-        <p className="text-sage-pale text-base max-w-lg mx-auto">
+        <p className="text-taupe text-base max-w-lg mx-auto">
           Artículos sobre tratamientos, cuidado de la piel y bienestar para que
           llegues a EloHer sabiendo exactamente lo que tu cuerpo necesita.
         </p>
