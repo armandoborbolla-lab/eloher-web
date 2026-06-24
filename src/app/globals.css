@@ -39,3 +39,46 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-cormorant), Georgia, serif;
   letter-spacing: 0.01em;
 }
+
+.blog-content h2 {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #3D4A35;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.blog-content h3 {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: #3D4A35;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.blog-content p {
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  color: #3a3a3a;
+  margin-bottom: 1.25rem;
+}
+
+.blog-content ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.blog-content li {
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: #3a3a3a;
+  margin-bottom: 0.4rem;
+}
+
+.blog-content strong {
+  color: #3D4A35;
+  font-weight: 600;
+}

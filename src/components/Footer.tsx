@@ -25,6 +25,7 @@ export default function Footer() {
           {[
             { href: "/", label: "Inicio" },
             { href: "/servicios", label: "Servicios" },
+            { href: "/blog", label: "Blog" },
             { href: "/#por-que", label: "Por qué Eloher" },
             { href: "/contacto", label: "Contacto" },
           ].map(({ href, label }) => (
