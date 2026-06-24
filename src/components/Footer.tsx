@@ -91,7 +91,7 @@ export default function Footer() {
               Horarios
             </p>
             <p className="text-sm text-white/55">Lun – Vie: 8:30 am – 7:00 pm</p>
-            <p className="text-sm text-white/55">Sábado: 10:00 am – 6:00 pm</p>
+            <p className="text-sm text-white/55">Sábado: 9:00 am – 4:00 pm</p>
             <p className="text-sm text-white/55">Domingo: Bajo reservación</p>
           </div>
         </div>
