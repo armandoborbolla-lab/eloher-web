@@ -113,7 +113,7 @@ const jsonLd = {
   priceRange: "$$",
   areaServed: { "@type": "City", name: "Monterrey" },
   hasMap: "https://maps.google.com/?q=25.754442629859884,-100.40324033567093",
-  sameAs: ["https://eloher.com.mx", "https://www.instagram.com/eloher.spa"],
+  sameAs: ["https://eloher.com.mx", "https://www.instagram.com/eloher.spa", "https://www.facebook.com/share/1LDQDcqhoo/"],
 };
 
 export default function RootLayout({
