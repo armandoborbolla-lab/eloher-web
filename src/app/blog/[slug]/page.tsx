@@ -143,7 +143,7 @@ export default async function PostPage({
             Agendar cita
           </Link>
           <a
-            href="https://wa.me/521234567890"
+            href="https://wa.me/528180824126"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 border border-olive text-olive text-xs tracking-[0.2em] uppercase hover:bg-olive hover:text-white transition-colors duration-300"

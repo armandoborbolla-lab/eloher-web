@@ -200,7 +200,7 @@ export default function ContactForm() {
       <p className="text-xs text-[#999] leading-relaxed">
         También puedes escribirnos directamente por{" "}
         <a
-          href="https://wa.me/521234567890"
+          href="https://wa.me/528180824126"
           target="_blank"
           rel="noopener noreferrer"
           className="text-sage underline"

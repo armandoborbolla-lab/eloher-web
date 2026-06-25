@@ -34,8 +34,8 @@ const info = [
   {
     icon: "📞",
     label: "Teléfono / WhatsApp",
-    value: "(123) 456-7890",
-    href: "https://wa.me/521234567890",
+    value: "(81) 8082-4126",
+    href: "https://wa.me/528180824126",
   },
   {
     icon: "✉️",

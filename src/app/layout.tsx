@@ -109,6 +109,7 @@ const jsonLd = {
     { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday"], opens: "08:30", closes: "19:00" },
     { "@type": "OpeningHoursSpecification", dayOfWeek: ["Saturday"], opens: "09:00", closes: "16:00" },
   ],
+  telephone: "+528180824126",
   email: "hola@eloher.com.mx",
   priceRange: "$$",
   areaServed: { "@type": "City", name: "Monterrey" },

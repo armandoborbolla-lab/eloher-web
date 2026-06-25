@@ -57,12 +57,12 @@ export default function Footer() {
             Monterrey, N.L. — 2° Piso
           </a>
           <a
-            href="https://wa.me/521234567890"
+            href="https://wa.me/528180824126"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-white/55 hover:text-white transition-colors"
           >
-            💬 WhatsApp: (123) 456-7890
+            💬 WhatsApp: (81) 8082-4126
           </a>
           <a
             href="mailto:hola@eloher.com.mx"
