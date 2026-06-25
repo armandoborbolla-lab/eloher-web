@@ -61,6 +61,7 @@ export const posts: Post[] = [
 <h2>Drenaje linfático en EloHer Spa, Monterrey</h2>
 <p>Nuestro tratamiento de Drenaje Linfático está disponible de lunes a sábado en Real de Cumbres 458, 2° Piso, Monterrey. Trabajamos con técnicas especializadas en un ambiente diseñado para que te desconectes por completo.</p>
 <p>¿Tienes dudas sobre si es el tratamiento indicado para ti? Escríbenos por WhatsApp — con gusto te asesoramos sin compromiso.</p>
+<p><a href="/servicios#masajes">Ver todos nuestros masajes y precios →</a></p>
     `,
   },
   {
@@ -112,8 +113,9 @@ export const posts: Post[] = [
 <p>Si es tu primer facial o llevas tiempo sin hacerte uno, no te preocupes: el resultado se nota desde la primera sesión.</p>
 
 <h2>Agenda tu facial en EloHer Spa, Monterrey</h2>
-<p>Todos nuestros faciales se realizan en Real de Cumbres 458, 2° Piso, Monterrey. Atendemos de lunes a viernes de 8:30 am a 7:00 pm y sábados de 10:00 am a 6:00 pm.</p>
+<p>Todos nuestros faciales se realizan en Real de Cumbres 458, 2° Piso, Monterrey. Atendemos de lunes a viernes de 8:30 am a 7:00 pm y sábados de 9:00 am a 4:00 pm.</p>
 <p>¿No sabes cuál elegir? Escríbenos por WhatsApp — con gusto te hacemos una recomendación personalizada sin ningún compromiso.</p>
+<p><a href="/servicios#faciales">Ver todos nuestros faciales y precios →</a></p>
     `,
   },
 ];

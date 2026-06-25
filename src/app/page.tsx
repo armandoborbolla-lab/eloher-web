@@ -4,7 +4,9 @@ import type { Metadata } from "next";
 import FadeIn from "@/components/FadeIn";
 
 export const metadata: Metadata = {
-  title: "EloHer Beauty & Wellness Spa",
+  title: { absolute: "EloHer Beauty & Wellness Spa — Spa Boutique en Monterrey" },
+  description:
+    "Spa boutique en Real Cumbres, Monterrey. Faciales, masajes relajantes, drenaje linfático y tratamientos corporales. Agenda tu cita por WhatsApp — eloher.com.mx.",
 };
 
 
@@ -52,6 +54,7 @@ const featuredServices = [
     description: "Limpiezas profundas, hidratación y tratamientos personalizados para una piel luminosa y saludable.",
     href: "/servicios#faciales",
     image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=900&h=600&fit=crop",
+    alt: "Facial hidratante y limpieza profunda en EloHer Spa Monterrey",
     tags: ["Limpieza facial", "Hidratación", "Antiedad"],
   },
   {
@@ -60,6 +63,7 @@ const featuredServices = [
     description: "Terapias para liberar tensión, reconectar cuerpo y mente, y devolverte la calma profunda.",
     href: "/servicios#masajes",
     image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=900&h=600&fit=crop",
+    alt: "Masaje relajante y aromaterapéutico en EloHer Spa Monterrey",
     tags: ["Relajante", "Descontracturante", "Aromaterapia"],
   },
   {
@@ -68,6 +72,7 @@ const featuredServices = [
     description: "Exfoliaciones, envolturas y rituales que cuidan tu piel de pies a cabeza con resultados visibles.",
     href: "/servicios#corporales",
     image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=900&h=600&fit=crop",
+    alt: "Tratamientos corporales reductivos y drenaje linfático en EloHer Spa Monterrey",
     tags: ["Exfoliación", "Envolturas", "Reafirmante"],
   },
 ];
@@ -143,7 +148,7 @@ export default function HomePage() {
         {/* Foto de fondo */}
         <Image
           src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=85&w=1920&fit=crop"
-          alt="EloHer Spa"
+          alt="EloHer Beauty & Wellness Spa — spa boutique en Real Cumbres, Monterrey"
           fill
           className="object-cover"
           priority
@@ -246,7 +251,7 @@ export default function HomePage() {
                   <div className="relative h-60 overflow-hidden">
                     <Image
                       src={svc.image}
-                      alt={svc.name}
+                      alt={svc.alt}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-700"
                       sizes="(max-width: 768px) 100vw, 33vw"
@@ -385,7 +390,7 @@ export default function HomePage() {
               <div className="relative h-full rounded-2xl overflow-hidden">
                 <Image
                   src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800&fit=crop"
-                  alt="Masaje EloHer"
+                  alt="Masaje relajante en EloHer Spa Real Cumbres Monterrey"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
                   sizes="33vw"
@@ -397,7 +402,7 @@ export default function HomePage() {
               <div className="relative h-full rounded-2xl overflow-hidden">
                 <Image
                   src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=800&fit=crop"
-                  alt="Facial EloHer"
+                  alt="Facial hidratante en EloHer Spa Monterrey"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
                   sizes="33vw"
@@ -409,7 +414,7 @@ export default function HomePage() {
               <div className="relative h-full rounded-2xl overflow-hidden">
                 <Image
                   src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=800&fit=crop"
-                  alt="Espacio EloHer"
+                  alt="Sala de tratamientos EloHer Spa boutique Monterrey"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
                   sizes="33vw"
@@ -421,7 +426,7 @@ export default function HomePage() {
               <div className="relative h-full rounded-2xl overflow-hidden">
                 <Image
                   src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800&fit=crop"
-                  alt="Bienestar EloHer"
+                  alt="Tratamiento corporal y bienestar en EloHer Spa Monterrey"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
                   sizes="33vw"
