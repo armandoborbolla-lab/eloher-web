@@ -52,13 +52,15 @@ export default function Navbar() {
               {label}
             </Link>
           ))}
-          <Link
-            href="/contacto"
+          <a
+            href="https://wa.me/528180824126"
+            target="_blank"
+            rel="noopener noreferrer"
             className="ml-2 px-5 py-2.5 bg-gold text-olive text-[10px] tracking-[0.15em] uppercase rounded-full hover:bg-gold-dark hover:text-white transition-colors duration-200 font-medium"
             style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
           >
             Reservar
-          </Link>
+          </a>
         </nav>
 
         {/* Mobile hamburger */}
@@ -86,13 +88,15 @@ export default function Navbar() {
               {label}
             </Link>
           ))}
-          <Link
-            href="/contacto"
+          <a
+            href="https://wa.me/528180824126"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-2 text-center px-5 py-3 bg-gold text-olive text-sm tracking-[0.15em] uppercase rounded-full font-medium"
             onClick={() => setOpen(false)}
           >
             Reservar
-          </Link>
+          </a>
         </div>
       )}
     </header>
