@@ -3,15 +3,12 @@ import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contacto y Ubicación",
-  description: "Agenda tu cita en EloHer Spa boutique, Real Cumbres 458, Monterrey. Lun–Vie 8:30–7pm, Sáb 10–6pm. Escríbenos y respondemos en menos de 24 horas.",
+  description: "Agenda tu cita en EloHer Spa boutique, Monterrey. Lun–Vie 8:30 am–7 pm, Sáb 9 am–4 pm. Escríbenos y respondemos en menos de 24 horas.",
   keywords: [
     "agendar cita spa Monterrey",
     "reservar spa Monterrey",
     "reservar masaje Monterrey",
     "contacto spa Monterrey",
-    "spa Real Cumbres Monterrey",
-    "spa Real Cumbres 458 Monterrey",
-    "spa Cumbres Monterrey",
     "horarios spa Monterrey",
     "spa cerca de mí Monterrey",
     "día de spa Monterrey cita",
@@ -19,7 +16,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://eloher.com.mx/contacto" },
   openGraph: {
     title: "Contacto — EloHer Spa Monterrey",
-    description: "Agenda tu cita. Real Cumbres 458, Monterrey. Lun–Vie 8:30–7pm, Sáb 10–6pm.",
+    description: "Agenda tu cita en Monterrey. Lun–Vie 8:30 am–7 pm, Sáb 9 am–4 pm.",
     url: "https://eloher.com.mx/contacto",
   },
 };
@@ -27,9 +24,8 @@ export const metadata: Metadata = {
 const info = [
   {
     icon: "📍",
-    label: "Dirección",
-    value: "Real de Cumbres 458, Real Cumbres\n64346 Monterrey, N.L. — 2° Piso",
-    href: "https://maps.google.com/?q=25.754442629859884,-100.40324033567093",
+    label: "Ubicación",
+    value: "Monterrey, N.L. — te compartimos la dirección al agendar tu cita",
   },
   {
     icon: "📞",
@@ -146,19 +142,6 @@ export default function ContactoPage() {
               </div>
             </div>
 
-            {/* Mapa Google Maps */}
-            <div className="rounded-xl overflow-hidden border border-sage/20 shadow-sm">
-              <iframe
-                src="https://maps.google.com/maps?q=25.754442629859884,-100.40324033567093&output=embed&z=17"
-                width="100%"
-                height="220"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="EloHer Spa — Ubicación"
-              />
-            </div>
           </div>
         </div>
       </section>

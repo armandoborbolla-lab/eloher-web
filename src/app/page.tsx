@@ -2,11 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import FadeIn from "@/components/FadeIn";
+import { RESERVAR_URL } from "@/lib/enlaces";
 
 export const metadata: Metadata = {
   title: { absolute: "EloHer Beauty & Wellness Spa — Spa Boutique en Monterrey" },
   description:
-    "Spa boutique en Real Cumbres, Monterrey. Faciales, masajes relajantes, drenaje linfático y tratamientos corporales. Agenda tu cita por WhatsApp — eloher.com.mx.",
+    "Spa boutique en Monterrey. Faciales, masajes relajantes, drenaje linfático y tratamientos corporales. Agenda tu cita — eloher.com.mx.",
 };
 
 
@@ -112,10 +113,6 @@ const faqs = [
     a: "Sí, aceptamos tarjeta de crédito y débito, efectivo y transferencia bancaria — sin comisiones adicionales. También podemos enviarte una liga de pago por WhatsApp antes de tu visita para que llegues sin pendientes y disfrutes desde el primer minuto.",
   },
   {
-    q: "¿Tienen estacionamiento?",
-    a: "Sí, contamos con estacionamiento disponible. Nos encontramos en el 2° piso de Real de Cumbres 458, Real Cumbres, Monterrey — fácil de llegar y con acceso muy cómodo.",
-  },
-  {
     q: "¿Venden gift cards o paquetes de regalo?",
     a: "¡Claro que sí! Tenemos gift cards para sesiones individuales y también para nuestros paquetes con duración de hasta 6 meses, como el Contorno Facial Perfecto o el Reductivo Corporal — ideales para regalar en cumpleaños, Día de las Madres o aniversarios. Escríbenos por WhatsApp y diseñamos juntas el regalo ideal.",
   },
@@ -148,7 +145,7 @@ export default function HomePage() {
         {/* Foto de fondo */}
         <Image
           src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=85&w=1920&fit=crop"
-          alt="EloHer Beauty & Wellness Spa — spa boutique en Real Cumbres, Monterrey"
+          alt="EloHer Beauty & Wellness Spa — spa boutique en Monterrey"
           fill
           className="object-cover"
           priority
@@ -175,13 +172,13 @@ export default function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/528180824126"
+              href={RESERVAR_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 px-8 py-3.5 bg-gold text-olive font-medium text-[11px] tracking-[0.2em] uppercase rounded-full hover:bg-gold-dark hover:text-white transition-colors duration-300"
               style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
             >
-              💬 Reserva por WhatsApp
+              Reserva tu cita
             </a>
             <Link
               href="/servicios"
@@ -390,7 +387,7 @@ export default function HomePage() {
               <div className="relative h-full rounded-2xl overflow-hidden">
                 <Image
                   src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800&fit=crop"
-                  alt="Masaje relajante en EloHer Spa Real Cumbres Monterrey"
+                  alt="Masaje relajante en EloHer Spa Monterrey"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
                   sizes="33vw"
@@ -623,17 +620,17 @@ export default function HomePage() {
             Regálate un momento de bienestar
           </h2>
           <p className="text-white/65 text-sm mb-10 max-w-md mx-auto" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>
-            Agenda tu cita por WhatsApp o escríbenos. Estamos listas para recibirte.
+            Agenda tu cita o escríbenos. Estamos listas para recibirte.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/528180824126"
+              href={RESERVAR_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 px-8 py-3.5 bg-gold text-olive font-medium text-[11px] tracking-[0.2em] uppercase rounded-full hover:bg-gold-dark hover:text-white transition-colors duration-300"
               style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
             >
-              💬 Reservar por WhatsApp
+              Reserva tu cita
             </a>
             <Link
               href="/contacto"

@@ -47,15 +47,7 @@ export default function Footer() {
           >
             Contáctanos
           </h3>
-          <a
-            href="https://maps.google.com/?q=25.754442629859884,-100.40324033567093"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-white/55 hover:text-white transition-colors leading-relaxed"
-          >
-            📍 Real de Cumbres 458, Real Cumbres<br />
-            Monterrey, N.L. — 2° Piso
-          </a>
+          <p className="text-sm text-white/55 leading-relaxed">📍 Monterrey, Nuevo León</p>
           <a
             href="https://wa.me/528180824126"
             target="_blank"

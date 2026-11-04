@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { RESERVAR_URL } from "@/lib/enlaces";
 
 const links = [
   { href: "/servicios", label: "Servicios" },
@@ -53,7 +54,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="https://wa.me/528180824126"
+            href={RESERVAR_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="ml-2 px-5 py-2.5 bg-gold text-olive text-[10px] tracking-[0.15em] uppercase rounded-full hover:bg-gold-dark hover:text-white transition-colors duration-200 font-medium"
@@ -89,7 +90,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="https://wa.me/528180824126"
+            href={RESERVAR_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-2 text-center px-5 py-3 bg-gold text-olive text-sm tracking-[0.15em] uppercase rounded-full font-medium"

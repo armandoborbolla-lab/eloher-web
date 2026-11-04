@@ -33,11 +33,9 @@ export const metadata: Metadata = {
     template: "%s | EloHer Spa Monterrey",
   },
   description:
-    "Spa boutique en Monterrey, Real Cumbres. Faciales, masajes, tratamientos corporales y más. Reserva tu cita hoy — eloher.com.mx.",
+    "Spa boutique en Monterrey. Faciales, masajes, tratamientos corporales y más. Reserva tu cita hoy — eloher.com.mx.",
   keywords: [
     "spa Monterrey",
-    "spa Real Cumbres Monterrey",
-    "spa Cumbres Monterrey",
     "spa boutique Monterrey",
     "spa boutique Nuevo León",
     "masajes Monterrey",
@@ -68,7 +66,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     title: "EloHer Beauty & Wellness Spa — Monterrey",
-    description: "Spa boutique en Real Cumbres, Monterrey. Faciales, masajes y tratamientos corporales. Reserva tu cita.",
+    description: "Spa boutique en Monterrey. Faciales, masajes y tratamientos corporales. Reserva tu cita.",
     url: SITE_URL,
     siteName: "EloHer Spa",
     locale: "es_MX",
@@ -78,7 +76,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EloHer Beauty & Wellness Spa — Monterrey",
-    description: "Spa boutique en Real Cumbres, Monterrey. Faciales, masajes y tratamientos corporales.",
+    description: "Spa boutique en Monterrey. Faciales, masajes y tratamientos corporales.",
     images: [OG_IMAGE],
   },
   alternates: { canonical: SITE_URL },
@@ -92,19 +90,12 @@ const jsonLd = {
   url: "https://eloher.com.mx",
   logo: "https://eloher.com.mx/logo-horizontal.png",
   image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=1200&fit=crop",
-  description: "Spa boutique en Real Cumbres, Monterrey. Faciales, masajes, tratamientos corporales y bienestar integral.",
+  description: "Spa boutique en Monterrey. Faciales, masajes, tratamientos corporales y bienestar integral.",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Real de Cumbres 458, 2° Piso",
     addressLocality: "Monterrey",
     addressRegion: "Nuevo León",
-    postalCode: "64346",
     addressCountry: "MX",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 25.754442629859884,
-    longitude: -100.40324033567093,
   },
   openingHoursSpecification: [
     { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday"], opens: "08:30", closes: "19:00" },
@@ -114,7 +105,6 @@ const jsonLd = {
   email: "hola@eloher.com.mx",
   priceRange: "$$",
   areaServed: { "@type": "City", name: "Monterrey" },
-  hasMap: "https://maps.google.com/?q=25.754442629859884,-100.40324033567093",
   sameAs: ["https://eloher.com.mx", "https://www.instagram.com/eloher.spa", "https://www.facebook.com/share/1LDQDcqhoo/"],
 };
 

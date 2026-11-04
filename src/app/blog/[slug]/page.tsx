@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getPost, getAllSlugs } from "@/lib/posts";
+import { RESERVAR_URL } from "@/lib/enlaces";
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -133,15 +134,17 @@ export default async function PostPage({
           ¿Lista para tu próxima sesión?
         </h2>
         <p className="text-sm text-taupe mb-8 max-w-md mx-auto">
-          Real de Cumbres 458, 2° Piso, Monterrey. Escríbenos y agenda en menos de 24 horas.
+          Atendemos en Monterrey. Escríbenos y agenda en menos de 24 horas.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
-            href="/contacto"
+          <a
+            href={RESERVAR_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-8 py-4 bg-olive text-white text-xs tracking-[0.2em] uppercase hover:bg-olive-mid transition-colors duration-300"
           >
             Agendar cita
-          </Link>
+          </a>
           <a
             href="https://wa.me/528180824126"
             target="_blank"
